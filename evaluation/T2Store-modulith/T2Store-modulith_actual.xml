@@ -1,0 +1,890 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd" identifier="model1-1" version="1.0">
+  <name xml:lang="en">ArchiMate Model based on t2storeModulith_expected.yaml</name>
+  
+  <elements>    
+    <element identifier="n-8106456566304887798" xsi:type="Node">      
+      <name xml:lang="en">MicrosoftAzure</name>
+    </element>
+    <element identifier="n-8106456566304887799" xsi:type="Node">      
+      <name xml:lang="en">t2store</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887739">
+          <value>t2store-aks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887740">
+          <value>West Europe</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887741">
+          <value>t2store-resources</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887742">
+          <value>t2storeaks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887743">
+          <value>default_node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887744">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887745">
+          <value>standard_b4ms</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887746">
+          <value>SystemAssigned</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887747">
+          <value>{"Environment":"Production"}</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887809" xsi:type="SystemSoftware">      
+      <name xml:lang="en">mongo-mongodb</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887748">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887749">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887750">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887751">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887752">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887753">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887754">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887755">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887756">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887757">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887758">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887759">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887822" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-mongodb-datadir-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887760">
+          <value>8Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887824" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">backend</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887761">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887762">
+          <value>prod</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887763">
+          <value>mongo-mongodb</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887764">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887765">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887766">
+          <value>jdbc:postgresql://postgres:5432/postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887767">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887768">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887769">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887770">
+          <value>25</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887771">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887772">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887773">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887774">
+          <value>TRUE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887775">
+          <value>http://creditinstitute/pay</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887776">
+          <value>5</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887777">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887778">
+          <value>1000000000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887779">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887780">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887845" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">creditinstitute</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887781">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887782">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887783">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887784">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887785">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887851" xsi:type="SystemSoftware">      
+      <name xml:lang="en">postgres</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887786">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887787">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887788">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887789">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887790">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887857" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres-postgres-storage-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887791">
+          <value>1Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887859" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">mongo-mongodb Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887748">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887749">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887750">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887751">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887752">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887753">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887754">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887755">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887756">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887757">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887758">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887759">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887893" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">creditinstitute Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887781">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887782">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887783">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887784">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887785">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887899" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">postgres Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887786">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887787">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887788">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887789">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887790">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="dev-8106456566304887905" xsi:type="Device">      
+      <name xml:lang="en">t2store Device</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887739">
+          <value>t2store-aks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887740">
+          <value>West Europe</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887741">
+          <value>t2store-resources</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887742">
+          <value>t2storeaks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887743">
+          <value>default_node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887744">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887745">
+          <value>standard_b4ms</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887746">
+          <value>SystemAssigned</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887747">
+          <value>{"Environment":"Production"}</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887915" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-mongodb Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887748">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887749">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887750">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887751">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887752">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887753">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887754">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887755">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887756">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887757">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887758">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887759">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887928" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887786">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887787">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887788">
+          <value>postgres</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887789">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887790">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887936" xsi:type="Artifact">      
+      <name xml:lang="en">backend docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887795">
+          <value>https://hub.docker.com/r/t2project/modulith</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887938" xsi:type="Artifact">      
+      <name xml:lang="en">creditinstitute docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887796">
+          <value>https://hub.docker.com/r/t2project/creditinstitute</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  
+  <relationships>    
+    
+    <relationship identifier="sv-8106456566304887665" source="ts-8106456566304887822" target="sysof-8106456566304887809" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304887667" source="ts-8106456566304887857" target="sysof-8106456566304887851" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304887669" source="ts-8106456566304887928" target="appcomp-8106456566304887824" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304887670" source="ts-8106456566304887915" target="appcomp-8106456566304887824" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304887671" source="appinter-8106456566304887893" target="appcomp-8106456566304887824" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304887672" source="dev-8106456566304887905" target="n-8106456566304887799" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304887673" source="tif-8106456566304887899" target="ts-8106456566304887928" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304887674" source="tif-8106456566304887859" target="ts-8106456566304887915" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304887675" source="n-8106456566304887799" target="art-8106456566304887936" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304887676" source="n-8106456566304887799" target="art-8106456566304887938" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304887677" source="art-8106456566304887936" target="appcomp-8106456566304887824" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304887678" source="art-8106456566304887938" target="appcomp-8106456566304887845" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887679" source="sysof-8106456566304887851" target="tif-8106456566304887899" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887680" source="sysof-8106456566304887809" target="tif-8106456566304887859" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887681" source="appcomp-8106456566304887845" target="appinter-8106456566304887893" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887682" source="n-8106456566304887799" target="sysof-8106456566304887809" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887683" source="n-8106456566304887799" target="sysof-8106456566304887851" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887684" source="n-8106456566304887798" target="n-8106456566304887799" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304887685" source="n-8106456566304887798" target="dev-8106456566304887905" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+  </relationships>
+  
+  <organizations>    
+    <item>      
+      <label xml:lang="en">Application</label>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="appinter-8106456566304887893"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Components</label>
+        <item identifierRef="appcomp-8106456566304887824"></item>
+        <item identifierRef="appcomp-8106456566304887845"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item>        
+        <label xml:lang="en">Artifacts</label>
+        <item identifierRef="art-8106456566304887936"></item>
+        <item identifierRef="art-8106456566304887938"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Services</label>
+        <item identifierRef="ts-8106456566304887822"></item>
+        <item identifierRef="ts-8106456566304887857"></item>
+        <item identifierRef="ts-8106456566304887915"></item>
+        <item identifierRef="ts-8106456566304887928"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="tif-8106456566304887859"></item>
+        <item identifierRef="tif-8106456566304887899"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Node</label>
+        <item identifierRef="n-8106456566304887798"></item>
+        <item identifierRef="n-8106456566304887799"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">System Software</label>
+        <item identifierRef="sysof-8106456566304887809"></item>
+        <item identifierRef="sysof-8106456566304887851"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Relations</label>
+      <item>
+        <label xml:lang="en">Structural</label>
+        <item>
+          <label xml:lang="en">Assignment</label>
+          <item identifierRef="ass-8106456566304887673"></item>
+          <item identifierRef="ass-8106456566304887674"></item>
+          <item identifierRef="ass-8106456566304887675"></item>
+          <item identifierRef="ass-8106456566304887676"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Composition</label>
+          <item identifierRef="comp-8106456566304887679"></item>
+          <item identifierRef="comp-8106456566304887680"></item>
+          <item identifierRef="comp-8106456566304887681"></item>
+          <item identifierRef="comp-8106456566304887682"></item>
+          <item identifierRef="comp-8106456566304887683"></item>
+          <item identifierRef="comp-8106456566304887684"></item>
+          <item identifierRef="comp-8106456566304887685"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Realization</label>
+          <item identifierRef="rl-8106456566304887677"></item>
+          <item identifierRef="rl-8106456566304887678"></item>
+        </item>
+      </item>
+      <item>
+        <label xml:lang="en">Dependency</label>
+        <item>
+          <label xml:lang="en">Serving</label>
+          <item identifierRef="sv-8106456566304887665"></item>
+          <item identifierRef="sv-8106456566304887667"></item>
+          <item identifierRef="sv-8106456566304887669"></item>
+          <item identifierRef="sv-8106456566304887670"></item>
+          <item identifierRef="sv-8106456566304887671"></item>
+          <item identifierRef="sv-8106456566304887672"></item>
+        </item>
+      </item>
+    </item>
+  </organizations>
+  
+  <propertyDefinitions>
+    <propertyDefinition identifier="propdef-8106456566304887686" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887687" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887688" type="string">
+      <name>resource_group_name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887689" type="string">
+      <name>dns_prefix</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887690" type="string">
+      <name>default_node_pool.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887691" type="string">
+      <name>default_node_pool.node_count</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887692" type="string">
+      <name>default_node_pool.vm_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887693" type="string">
+      <name>identity.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887694" type="string">
+      <name>tags</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887695" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887696" type="string">
+      <name>SPRING_PROFILES_ACTIVE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887697" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887698" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887699" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887700" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887701" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887702" type="string">
+      <name>T2_CART_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887703" type="string">
+      <name>T2_CART_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887704" type="string">
+      <name>T2_INVENTORY_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887705" type="string">
+      <name>T2_INVENTORY_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887706" type="string">
+      <name>T2_INVENTORY_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887707" type="string">
+      <name>T2_INVENTORY_SET_UNITS_TO_MAX</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887708" type="string">
+      <name>T2_PAYMENT_PROVIDER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887709" type="string">
+      <name>T2_PAYMENT_PROVIDER_DUMMY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887710" type="string">
+      <name>T2_PAYMENT_PROVIDER_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887711" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887712" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_PI_TOTAL_POINTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887713" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887714" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887715" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887716" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887717" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887718" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887719" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887720" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887721" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887722" type="string">
+      <name>ALLOW_EMPTY_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887723" type="string">
+      <name>MONGODB_SYSTEM_LOG_VERBOSITY</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887724" type="string">
+      <name>MONGODB_DISABLE_SYSTEM_LOG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887725" type="string">
+      <name>MONGODB_DISABLE_JAVASCRIPT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887726" type="string">
+      <name>MONGODB_ENABLE_JOURNAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887727" type="string">
+      <name>MONGODB_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887728" type="string">
+      <name>MONGODB_ENABLE_IPV6</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887729" type="string">
+      <name>MONGODB_ENABLE_DIRECTORY_PER_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887730" type="number">
+      <name>containerPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887731" type="string">
+      <name>exposedPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887732" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887733" type="string">
+      <name>POSTGRES_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887734" type="string">
+      <name>POSTGRES_USER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887735" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887736" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887737" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887738" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887739" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887740" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887741" type="string">
+      <name>resource_group_name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887742" type="string">
+      <name>dns_prefix</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887743" type="string">
+      <name>default_node_pool.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887744" type="string">
+      <name>default_node_pool.node_count</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887745" type="string">
+      <name>default_node_pool.vm_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887746" type="string">
+      <name>identity.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887747" type="string">
+      <name>tags</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887748" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887749" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887750" type="string">
+      <name>ALLOW_EMPTY_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887751" type="string">
+      <name>MONGODB_SYSTEM_LOG_VERBOSITY</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887752" type="string">
+      <name>MONGODB_DISABLE_SYSTEM_LOG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887753" type="string">
+      <name>MONGODB_DISABLE_JAVASCRIPT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887754" type="string">
+      <name>MONGODB_ENABLE_JOURNAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887755" type="string">
+      <name>MONGODB_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887756" type="string">
+      <name>MONGODB_ENABLE_IPV6</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887757" type="string">
+      <name>MONGODB_ENABLE_DIRECTORY_PER_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887758" type="string">
+      <name>containerPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887759" type="string">
+      <name>exposedPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887760" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887761" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887762" type="string">
+      <name>SPRING_PROFILES_ACTIVE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887763" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887764" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887765" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887766" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887767" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887768" type="string">
+      <name>T2_CART_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887769" type="string">
+      <name>T2_CART_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887770" type="string">
+      <name>T2_INVENTORY_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887771" type="string">
+      <name>T2_INVENTORY_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887772" type="string">
+      <name>T2_INVENTORY_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887773" type="string">
+      <name>T2_INVENTORY_SET_UNITS_TO_MAX</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887774" type="string">
+      <name>T2_PAYMENT_PROVIDER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887775" type="string">
+      <name>T2_PAYMENT_PROVIDER_DUMMY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887776" type="string">
+      <name>T2_PAYMENT_PROVIDER_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887777" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887778" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_PI_TOTAL_POINTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887779" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887780" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887781" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887782" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887783" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887784" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887785" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887786" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887787" type="string">
+      <name>POSTGRES_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887788" type="string">
+      <name>POSTGRES_USER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887789" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887790" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887791" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887792" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887793" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887794" type="string">
+      <name>docker.io/bitnami/mongodb:8.0.11-debian-12-r0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887795" type="string">
+      <name>t2project/modulith:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887796" type="string">
+      <name>t2project/creditinstitute:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887797" type="string">
+      <name>postgres:12.16-bullseye</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  
+  <views>    
+    <diagrams>
+      <view identifier="id-001" xsi:type="Diagram">
+        <name xml:lang="en">Default View</name>
+      </view>
+    </diagrams>
+  </views>
+  
+</model>

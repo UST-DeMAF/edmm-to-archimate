@@ -1,0 +1,8 @@
+model,elem_precision,elem_recall,elem_f1,rel_precision,rel_recall,rel_f1,ged,ged_normalized
+Meitrex,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+OTEL-Ansible,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+OTEL-Kubernetes,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+OTEL-Terraform,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+T2Store-microservices,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+T2Store-modulith,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+boutiqueshop,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0

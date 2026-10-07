@@ -1,0 +1,3425 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd" identifier="model1-1" version="1.0">
+  <name xml:lang="en">ArchiMate Model based on otelshopAnsible_expected.yaml</name>
+  
+  <elements>    
+    <element identifier="n-8106456566298903238" xsi:type="Node">      
+      <name xml:lang="en">localhost</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903017">
+          <value>local</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903240" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">accountingservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903018">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903019">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903020">
+          <value>service.name=accountingservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903021">
+          <value>accountingservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903022">
+          <value>kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903246" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">adservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903023">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903024">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903025">
+          <value>service.name=adservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903026">
+          <value>adservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903027">
+          <value>otlp</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903028">
+          <value>9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903029">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903030">
+          <value>8013</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903255" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">cartservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903031">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903032">
+          <value>service.name=cartservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903033">
+          <value>cartservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903034">
+          <value>7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903035">
+          <value>valkeycart:6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903036">
+          <value>valkeycart:6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903037">
+          <value>http://*:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903038">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903039">
+          <value>8013</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903265" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">checkoutservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903040">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903041">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903042">
+          <value>service.name=checkoutservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903043">
+          <value>checkoutservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903044">
+          <value>otlp</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903045">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903046">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903047">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903048">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903049">
+          <value>currencyservice:7001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903050">
+          <value>http://emailservice:6060</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903051">
+          <value>paymentservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903052">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903053">
+          <value>shippingservice:50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903054">
+          <value>kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903281" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">currencyservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903055">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903056">
+          <value>service.name=currencyservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903057">
+          <value>currencyservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903058">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903059">
+          <value>7001</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903287" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">emailservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903060">
+          <value>http://otelcol:4318/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903061">
+          <value>service.name=emailservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903062">
+          <value>emailservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903063">
+          <value>6060</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903064">
+          <value>production</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903293" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">flagd</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903065">
+          <value>otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903066">
+          <value>otel</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903067">
+          <value>service.name=flagd,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903068">
+          <value>flagd</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903298" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">frauddetectionservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903069">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903070">
+          <value>service.name=frauddetectionservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903071">
+          <value>frauddetectionservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903072">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903073">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903074">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903075">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903076">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903077">
+          <value>true</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903308" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">frontend</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903078">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903079">
+          <value>service.name=frontend,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903080">
+          <value>frontend</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903081">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903082">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903083">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903084">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903085">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903086">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903087">
+          <value>frontend:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903088">
+          <value>adservice:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903089">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903090">
+          <value>checkoutservice:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903091">
+          <value>currencyservice:7001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903092">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903093">
+          <value>recommendationservice:9001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903094">
+          <value>shippingservice:50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903095">
+          <value>local</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903096">
+          <value>http://otelcol:8080/otlp-http/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903097">
+          <value>frontend-web</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903098">
+          <value>otelcol</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903330" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">frontendproxy</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903099">
+          <value>service.name=frontendproxy,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903100">
+          <value>frontendproxy</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903101">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903102">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903103">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903104">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903105">
+          <value>4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903106">
+          <value>frontend</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903107">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903108">
+          <value>grafana</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903109">
+          <value>3000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903110">
+          <value>imageprovider</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903111">
+          <value>8081</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903112">
+          <value>jaeger</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903113">
+          <value>16686</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903114">
+          <value>loadgenerator</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903115">
+          <value>8089</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903116">
+          <value>8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903349" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">grafana</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903117">
+          <value>grafana-opensearch-datasource</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903351" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">imageprovider</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903118">
+          <value>service.name=imageprovider,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903119">
+          <value>imageprovider</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903120">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903121">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903122">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903123">
+          <value>8081</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903358" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">jaeger</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903124">
+          <value>prometheus</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566298903360" xsi:type="SystemSoftware">      
+      <name xml:lang="en">kafka</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903125">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903126">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903127">
+          <value>service.name=kafka,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903128">
+          <value>kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903129">
+          <value>-Xmx400m -Xms400m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903130">
+          <value>PLAINTEXT://kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903367" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">loadgenerator</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903131">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903132">
+          <value>service.name=loadgenerator,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903133">
+          <value>loadgenerator</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903134">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903135">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903136">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903137">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903138">
+          <value>http://otelcol:8080/otlp-http/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903139">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903140">
+          <value>http://frontendproxy:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903141">
+          <value>8089</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903142">
+          <value>10</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903143">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903144">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903145">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903146">
+          <value>python</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903147">
+          <value>0.0.0.0</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566298903385" xsi:type="SystemSoftware">      
+      <name xml:lang="en">mongo</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903148">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903149">
+          <value>mongo_product_catalog</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903388" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">opensearch</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903150">
+          <value>demo-cluster</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903151">
+          <value>demo-node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903152">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903153">
+          <value>single-node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903154">
+          <value>-Xms300m -Xmx300m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903155">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903156">
+          <value>true</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903396" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">otelcol</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903157">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903158">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903159">
+          <value>4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903160">
+          <value>8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903401" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">paymentservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903161">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903162">
+          <value>service.name=paymentservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903163">
+          <value>paymentservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903164">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903165">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903166">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903167">
+          <value>50051</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903409" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">productcatalogservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903168">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903169">
+          <value>service.name=productcatalogservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903170">
+          <value>productcatalogservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903171">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903172">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903173">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903174">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903175">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903176">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903177">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903178">
+          <value>mongo_product_catalog</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903421" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">prometheus</name>
+    </element>
+    <element identifier="appcomp-8106456566298903422" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">quoteservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903179">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903180">
+          <value>service.name=quoteservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903181">
+          <value>quoteservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903182">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903183">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903184">
+          <value>8090</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903429" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">recommendationservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903185">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903186">
+          <value>service.name=recommendationservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903187">
+          <value>recommendationservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903188">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903189">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903190">
+          <value>9001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903191">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903192">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903193">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903194">
+          <value>python</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566298903440" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">shippingservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903195">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903196">
+          <value>service.name=shippingservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903197">
+          <value>shippingservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903198">
+          <value>50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903199">
+          <value>http://quoteservice:8090</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566298903446" xsi:type="SystemSoftware">      
+      <name xml:lang="en">valkeycart</name>
+    </element>
+    <element identifier="appinter-8106456566298903453" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">adservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903023">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903024">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903025">
+          <value>service.name=adservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903026">
+          <value>adservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903027">
+          <value>otlp</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903028">
+          <value>9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903029">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903030">
+          <value>8013</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903462" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">cartservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903031">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903032">
+          <value>service.name=cartservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903033">
+          <value>cartservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903034">
+          <value>7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903035">
+          <value>valkeycart:6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903036">
+          <value>valkeycart:6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903037">
+          <value>http://*:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903038">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903039">
+          <value>8013</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903472" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">checkoutservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903040">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903041">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903042">
+          <value>service.name=checkoutservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903043">
+          <value>checkoutservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903044">
+          <value>otlp</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903045">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903046">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903047">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903048">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903049">
+          <value>currencyservice:7001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903050">
+          <value>http://emailservice:6060</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903051">
+          <value>paymentservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903052">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903053">
+          <value>shippingservice:50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903054">
+          <value>kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903488" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">currencyservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903055">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903056">
+          <value>service.name=currencyservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903057">
+          <value>currencyservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903058">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903059">
+          <value>7001</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903494" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">emailservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903060">
+          <value>http://otelcol:4318/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903061">
+          <value>service.name=emailservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903062">
+          <value>emailservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903063">
+          <value>6060</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903064">
+          <value>production</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903500" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">flagd Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903065">
+          <value>otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903066">
+          <value>otel</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903067">
+          <value>service.name=flagd,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903068">
+          <value>flagd</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903515" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">frontend Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903078">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903079">
+          <value>service.name=frontend,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903080">
+          <value>frontend</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903081">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903082">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903083">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903084">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903085">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903086">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903087">
+          <value>frontend:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903088">
+          <value>adservice:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903089">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903090">
+          <value>checkoutservice:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903091">
+          <value>currencyservice:7001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903092">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903093">
+          <value>recommendationservice:9001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903094">
+          <value>shippingservice:50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903095">
+          <value>local</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903096">
+          <value>http://otelcol:8080/otlp-http/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903097">
+          <value>frontend-web</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903098">
+          <value>otelcol</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903537" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">frontendproxy Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903099">
+          <value>service.name=frontendproxy,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903100">
+          <value>frontendproxy</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903101">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903102">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903103">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903104">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903105">
+          <value>4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903106">
+          <value>frontend</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903107">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903108">
+          <value>grafana</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903109">
+          <value>3000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903110">
+          <value>imageprovider</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903111">
+          <value>8081</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903112">
+          <value>jaeger</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903113">
+          <value>16686</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903114">
+          <value>loadgenerator</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903115">
+          <value>8089</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903116">
+          <value>8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903556" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">grafana Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903117">
+          <value>grafana-opensearch-datasource</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903558" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">imageprovider Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903118">
+          <value>service.name=imageprovider,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903119">
+          <value>imageprovider</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903120">
+          <value>1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903121">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903122">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903123">
+          <value>8081</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903565" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">jaeger Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903124">
+          <value>prometheus</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566298903567" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">kafka Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903125">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903126">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903127">
+          <value>service.name=kafka,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903128">
+          <value>kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903129">
+          <value>-Xmx400m -Xms400m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903130">
+          <value>PLAINTEXT://kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903574" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">loadgenerator Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903131">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903132">
+          <value>service.name=loadgenerator,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903133">
+          <value>loadgenerator</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903134">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903135">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903136">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903137">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903138">
+          <value>http://otelcol:8080/otlp-http/v1/traces</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903139">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903140">
+          <value>http://frontendproxy:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903141">
+          <value>8089</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903142">
+          <value>10</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903143">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903144">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903145">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903146">
+          <value>python</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903147">
+          <value>0.0.0.0</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566298903592" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">mongo Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903148">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903149">
+          <value>mongo_product_catalog</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903595" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">opensearch Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903150">
+          <value>demo-cluster</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903151">
+          <value>demo-node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903152">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903153">
+          <value>single-node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903154">
+          <value>-Xms300m -Xmx300m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903155">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903156">
+          <value>true</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903603" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">otelcol Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903157">
+          <value>otelcol</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903158">
+          <value>4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903159">
+          <value>4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903160">
+          <value>8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903608" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">paymentservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903161">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903162">
+          <value>service.name=paymentservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903163">
+          <value>paymentservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903164">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903165">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903166">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903167">
+          <value>50051</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903616" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">productcatalogservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903168">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903169">
+          <value>service.name=productcatalogservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903170">
+          <value>productcatalogservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903171">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903172">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903173">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903174">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903175">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903176">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903177">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903178">
+          <value>mongo_product_catalog</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903628" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">prometheus Interface</name>
+    </element>
+    <element identifier="appinter-8106456566298903629" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">quoteservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903179">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903180">
+          <value>service.name=quoteservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903181">
+          <value>quoteservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903182">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903183">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903184">
+          <value>8090</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903636" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">recommendationservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903185">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903186">
+          <value>service.name=recommendationservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903187">
+          <value>recommendationservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903188">
+          <value>cumulative</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903189">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903190">
+          <value>9001</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903191">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903192">
+          <value>flagd</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903193">
+          <value>8013</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903194">
+          <value>python</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566298903647" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">shippingservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903195">
+          <value>http://otelcol:4317</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903196">
+          <value>service.name=shippingservice,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903197">
+          <value>shippingservice</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903198">
+          <value>50050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903199">
+          <value>http://quoteservice:8090</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566298903653" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">valkeycart Interface</name>
+    </element>
+    <element identifier="ts-8106456566298903654" xsi:type="TechnologyService">      
+      <name xml:lang="en">kafka Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903125">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903126">
+          <value>http://otelcol:4318</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903127">
+          <value>service.name=kafka,service.namespace=opentelemetry-demo,service.version=1.11.1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903128">
+          <value>kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903129">
+          <value>-Xmx400m -Xms400m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903130">
+          <value>PLAINTEXT://kafka:9092</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566298903661" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903148">
+          <value>mongo</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566298903149">
+          <value>mongo_product_catalog</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566298903664" xsi:type="TechnologyService">      
+      <name xml:lang="en">valkeycart Service</name>
+    </element>
+    <element identifier="art-8106456566298903665" xsi:type="Artifact">      
+      <name xml:lang="en">accountingservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903200">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-accountingservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903667" xsi:type="Artifact">      
+      <name xml:lang="en">adservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903201">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-adservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903669" xsi:type="Artifact">      
+      <name xml:lang="en">cartservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903202">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-cartservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903671" xsi:type="Artifact">      
+      <name xml:lang="en">checkoutservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903203">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-checkoutservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903673" xsi:type="Artifact">      
+      <name xml:lang="en">currencyservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903204">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-currencyservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903675" xsi:type="Artifact">      
+      <name xml:lang="en">emailservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903205">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-emailservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903677" xsi:type="Artifact">      
+      <name xml:lang="en">flagd docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903206">
+          <value>ghcr.io/open-feature/flagd:v0.11.2</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903679" xsi:type="Artifact">      
+      <name xml:lang="en">frauddetectionservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903208">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-frauddetectionservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903681" xsi:type="Artifact">      
+      <name xml:lang="en">frontend docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903209">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-frontend</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903683" xsi:type="Artifact">      
+      <name xml:lang="en">frontendproxy docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903210">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-frontendproxy</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903685" xsi:type="Artifact">      
+      <name xml:lang="en">grafana docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903211">
+          <value>https://hub.docker.com/r/grafana/grafana</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903687" xsi:type="Artifact">      
+      <name xml:lang="en">imageprovider docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903221">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-imageprovider</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903689" xsi:type="Artifact">      
+      <name xml:lang="en">jaeger docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903222">
+          <value>https://hub.docker.com/r/jaegertracing/all-in-one</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903693" xsi:type="Artifact">      
+      <name xml:lang="en">loadgenerator docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903224">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-loadgenerator</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903697" xsi:type="Artifact">      
+      <name xml:lang="en">opensearch docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903226">
+          <value>https://hub.docker.com/r/opensearchproject/opensearch</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903699" xsi:type="Artifact">      
+      <name xml:lang="en">otelcol docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903227">
+          <value>https://hub.docker.com/r/otel/opentelemetry-collector-contrib</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903701" xsi:type="Artifact">      
+      <name xml:lang="en">paymentservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903230">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-paymentservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903703" xsi:type="Artifact">      
+      <name xml:lang="en">productcatalogservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903231">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-productcatalogservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903705" xsi:type="Artifact">      
+      <name xml:lang="en">prometheus docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903232">
+          <value>quay.io/prometheus/prometheus:v2.54.1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903707" xsi:type="Artifact">      
+      <name xml:lang="en">quoteservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903234">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-quoteservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903709" xsi:type="Artifact">      
+      <name xml:lang="en">recommendationservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903235">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-recommendationservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566298903711" xsi:type="Artifact">      
+      <name xml:lang="en">shippingservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566298903236">
+          <value>ghcr.io/open-telemetry/demo:1.11.1-shippingservice</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  
+  <relationships>    
+    
+    <relationship identifier="sv-8106456566298902648" source="appinter-8106456566298903628" target="appcomp-8106456566298903358" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902649" source="ts-8106456566298903654" target="appcomp-8106456566298903240" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902650" source="appinter-8106456566298903603" target="appcomp-8106456566298903240" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902651" source="appinter-8106456566298903500" target="appcomp-8106456566298903246" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902652" source="appinter-8106456566298903603" target="appcomp-8106456566298903246" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902653" source="ts-8106456566298903664" target="appcomp-8106456566298903255" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902654" source="appinter-8106456566298903500" target="appcomp-8106456566298903255" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902655" source="appinter-8106456566298903603" target="appcomp-8106456566298903255" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902656" source="appinter-8106456566298903462" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902657" source="appinter-8106456566298903488" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902658" source="appinter-8106456566298903494" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902659" source="appinter-8106456566298903608" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902660" source="appinter-8106456566298903616" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902661" source="appinter-8106456566298903647" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902662" source="ts-8106456566298903654" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902663" source="appinter-8106456566298903500" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902664" source="appinter-8106456566298903603" target="appcomp-8106456566298903265" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902665" source="appinter-8106456566298903603" target="appcomp-8106456566298903281" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902666" source="appinter-8106456566298903603" target="appcomp-8106456566298903287" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902667" source="appinter-8106456566298903603" target="appcomp-8106456566298903293" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902668" source="ts-8106456566298903654" target="appcomp-8106456566298903298" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902669" source="appinter-8106456566298903500" target="appcomp-8106456566298903298" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902670" source="appinter-8106456566298903603" target="appcomp-8106456566298903298" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902671" source="appinter-8106456566298903453" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902672" source="appinter-8106456566298903462" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902673" source="appinter-8106456566298903472" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902674" source="appinter-8106456566298903488" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902675" source="appinter-8106456566298903616" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902676" source="appinter-8106456566298903636" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902677" source="appinter-8106456566298903647" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902678" source="appinter-8106456566298903500" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902679" source="appinter-8106456566298903603" target="appcomp-8106456566298903308" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902680" source="appinter-8106456566298903500" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902681" source="appinter-8106456566298903515" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902682" source="appinter-8106456566298903556" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902683" source="appinter-8106456566298903558" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902684" source="appinter-8106456566298903565" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902685" source="appinter-8106456566298903574" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902686" source="appinter-8106456566298903603" target="appcomp-8106456566298903330" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902687" source="appinter-8106456566298903603" target="appcomp-8106456566298903351" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902688" source="ts-8106456566298903654" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902689" source="appinter-8106456566298903537" target="appcomp-8106456566298903367" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902690" source="appinter-8106456566298903500" target="appcomp-8106456566298903367" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902691" source="appinter-8106456566298903603" target="appcomp-8106456566298903367" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902692" source="appinter-8106456566298903500" target="appcomp-8106456566298903401" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902693" source="appinter-8106456566298903603" target="appcomp-8106456566298903401" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902694" source="appinter-8106456566298903500" target="appcomp-8106456566298903409" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902695" source="appinter-8106456566298903603" target="appcomp-8106456566298903409" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902696" source="ts-8106456566298903661" target="appcomp-8106456566298903409" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902697" source="appinter-8106456566298903603" target="appcomp-8106456566298903422" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902698" source="appinter-8106456566298903616" target="appcomp-8106456566298903429" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902699" source="appinter-8106456566298903500" target="appcomp-8106456566298903429" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902700" source="appinter-8106456566298903603" target="appcomp-8106456566298903429" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902701" source="appinter-8106456566298903629" target="appcomp-8106456566298903440" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902702" source="appinter-8106456566298903603" target="appcomp-8106456566298903440" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902703" source="appinter-8106456566298903537" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902704" source="ts-8106456566298903664" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902705" source="appinter-8106456566298903628" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902706" source="appinter-8106456566298903565" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902707" source="appinter-8106456566298903595" target="appcomp-8106456566298903396" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902708" source="appinter-8106456566298903603" target="appcomp-8106456566298903421" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902709" source="appinter-8106456566298903628" target="appcomp-8106456566298903349" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902710" source="appinter-8106456566298903565" target="appcomp-8106456566298903349" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566298902711" source="appinter-8106456566298903595" target="appcomp-8106456566298903349" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902712" source="tif-8106456566298903567" target="ts-8106456566298903654" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902713" source="tif-8106456566298903653" target="ts-8106456566298903664" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902717" source="tif-8106456566298903592" target="ts-8106456566298903661" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902719" source="n-8106456566298903238" target="art-8106456566298903665" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902720" source="n-8106456566298903238" target="art-8106456566298903667" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902721" source="n-8106456566298903238" target="art-8106456566298903669" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902722" source="n-8106456566298903238" target="art-8106456566298903671" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902723" source="n-8106456566298903238" target="art-8106456566298903673" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902724" source="n-8106456566298903238" target="art-8106456566298903675" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902725" source="n-8106456566298903238" target="art-8106456566298903679" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902726" source="n-8106456566298903238" target="art-8106456566298903681" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902727" source="n-8106456566298903238" target="art-8106456566298903683" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902728" source="n-8106456566298903238" target="art-8106456566298903687" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902729" source="n-8106456566298903238" target="art-8106456566298903693" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902730" source="n-8106456566298903238" target="art-8106456566298903701" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902731" source="n-8106456566298903238" target="art-8106456566298903703" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902732" source="n-8106456566298903238" target="art-8106456566298903707" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902733" source="n-8106456566298903238" target="art-8106456566298903709" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902734" source="n-8106456566298903238" target="art-8106456566298903711" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902735" source="n-8106456566298903238" target="art-8106456566298903677" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902736" source="n-8106456566298903238" target="art-8106456566298903689" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902737" source="n-8106456566298903238" target="art-8106456566298903685" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902738" source="n-8106456566298903238" target="art-8106456566298903699" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902739" source="n-8106456566298903238" target="art-8106456566298903705" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566298902740" source="n-8106456566298903238" target="art-8106456566298903697" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902741" source="art-8106456566298903665" target="appcomp-8106456566298903240" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902742" source="art-8106456566298903667" target="appcomp-8106456566298903246" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902743" source="art-8106456566298903669" target="appcomp-8106456566298903255" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902744" source="art-8106456566298903671" target="appcomp-8106456566298903265" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902745" source="art-8106456566298903673" target="appcomp-8106456566298903281" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902746" source="art-8106456566298903675" target="appcomp-8106456566298903287" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902747" source="art-8106456566298903679" target="appcomp-8106456566298903298" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902748" source="art-8106456566298903681" target="appcomp-8106456566298903308" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902749" source="art-8106456566298903683" target="appcomp-8106456566298903330" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902750" source="art-8106456566298903687" target="appcomp-8106456566298903351" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902751" source="art-8106456566298903693" target="appcomp-8106456566298903367" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902752" source="art-8106456566298903701" target="appcomp-8106456566298903401" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902753" source="art-8106456566298903703" target="appcomp-8106456566298903409" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902754" source="art-8106456566298903707" target="appcomp-8106456566298903422" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902755" source="art-8106456566298903709" target="appcomp-8106456566298903429" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902756" source="art-8106456566298903711" target="appcomp-8106456566298903440" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902757" source="art-8106456566298903677" target="appcomp-8106456566298903293" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902758" source="art-8106456566298903689" target="appcomp-8106456566298903358" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902759" source="art-8106456566298903685" target="appcomp-8106456566298903349" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902760" source="art-8106456566298903699" target="appcomp-8106456566298903396" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902761" source="art-8106456566298903705" target="appcomp-8106456566298903421" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566298902762" source="art-8106456566298903697" target="appcomp-8106456566298903388" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902763" source="appcomp-8106456566298903421" target="appinter-8106456566298903628" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902764" source="sysof-8106456566298903360" target="tif-8106456566298903567" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902765" source="appcomp-8106456566298903396" target="appinter-8106456566298903603" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902766" source="appcomp-8106456566298903293" target="appinter-8106456566298903500" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902768" source="sysof-8106456566298903446" target="tif-8106456566298903653" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902771" source="appcomp-8106456566298903255" target="appinter-8106456566298903462" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902772" source="appcomp-8106456566298903281" target="appinter-8106456566298903488" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902773" source="appcomp-8106456566298903287" target="appinter-8106456566298903494" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902774" source="appcomp-8106456566298903401" target="appinter-8106456566298903608" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902775" source="appcomp-8106456566298903409" target="appinter-8106456566298903616" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902776" source="appcomp-8106456566298903440" target="appinter-8106456566298903647" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902786" source="appcomp-8106456566298903246" target="appinter-8106456566298903453" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902788" source="appcomp-8106456566298903265" target="appinter-8106456566298903472" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902791" source="appcomp-8106456566298903429" target="appinter-8106456566298903636" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902796" source="appcomp-8106456566298903308" target="appinter-8106456566298903515" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902797" source="appcomp-8106456566298903349" target="appinter-8106456566298903556" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902798" source="appcomp-8106456566298903351" target="appinter-8106456566298903558" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902799" source="appcomp-8106456566298903358" target="appinter-8106456566298903565" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902800" source="appcomp-8106456566298903367" target="appinter-8106456566298903574" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902804" source="appcomp-8106456566298903330" target="appinter-8106456566298903537" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902811" source="sysof-8106456566298903385" target="tif-8106456566298903592" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902816" source="appcomp-8106456566298903422" target="appinter-8106456566298903629" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902822" source="appcomp-8106456566298903388" target="appinter-8106456566298903595" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902827" source="n-8106456566298903238" target="sysof-8106456566298903360" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902828" source="n-8106456566298903238" target="sysof-8106456566298903446" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566298902829" source="n-8106456566298903238" target="sysof-8106456566298903385" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+  </relationships>
+  
+  <organizations>    
+    <item>      
+      <label xml:lang="en">Application</label>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="appinter-8106456566298903453"></item>
+        <item identifierRef="appinter-8106456566298903462"></item>
+        <item identifierRef="appinter-8106456566298903472"></item>
+        <item identifierRef="appinter-8106456566298903488"></item>
+        <item identifierRef="appinter-8106456566298903494"></item>
+        <item identifierRef="appinter-8106456566298903500"></item>
+        <item identifierRef="appinter-8106456566298903515"></item>
+        <item identifierRef="appinter-8106456566298903537"></item>
+        <item identifierRef="appinter-8106456566298903556"></item>
+        <item identifierRef="appinter-8106456566298903558"></item>
+        <item identifierRef="appinter-8106456566298903565"></item>
+        <item identifierRef="appinter-8106456566298903574"></item>
+        <item identifierRef="appinter-8106456566298903595"></item>
+        <item identifierRef="appinter-8106456566298903603"></item>
+        <item identifierRef="appinter-8106456566298903608"></item>
+        <item identifierRef="appinter-8106456566298903616"></item>
+        <item identifierRef="appinter-8106456566298903628"></item>
+        <item identifierRef="appinter-8106456566298903629"></item>
+        <item identifierRef="appinter-8106456566298903636"></item>
+        <item identifierRef="appinter-8106456566298903647"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Components</label>
+        <item identifierRef="appcomp-8106456566298903240"></item>
+        <item identifierRef="appcomp-8106456566298903246"></item>
+        <item identifierRef="appcomp-8106456566298903255"></item>
+        <item identifierRef="appcomp-8106456566298903265"></item>
+        <item identifierRef="appcomp-8106456566298903281"></item>
+        <item identifierRef="appcomp-8106456566298903287"></item>
+        <item identifierRef="appcomp-8106456566298903293"></item>
+        <item identifierRef="appcomp-8106456566298903298"></item>
+        <item identifierRef="appcomp-8106456566298903308"></item>
+        <item identifierRef="appcomp-8106456566298903330"></item>
+        <item identifierRef="appcomp-8106456566298903349"></item>
+        <item identifierRef="appcomp-8106456566298903351"></item>
+        <item identifierRef="appcomp-8106456566298903358"></item>
+        <item identifierRef="appcomp-8106456566298903367"></item>
+        <item identifierRef="appcomp-8106456566298903388"></item>
+        <item identifierRef="appcomp-8106456566298903396"></item>
+        <item identifierRef="appcomp-8106456566298903401"></item>
+        <item identifierRef="appcomp-8106456566298903409"></item>
+        <item identifierRef="appcomp-8106456566298903421"></item>
+        <item identifierRef="appcomp-8106456566298903422"></item>
+        <item identifierRef="appcomp-8106456566298903429"></item>
+        <item identifierRef="appcomp-8106456566298903440"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item>        
+        <label xml:lang="en">Artifacts</label>
+        <item identifierRef="art-8106456566298903665"></item>
+        <item identifierRef="art-8106456566298903667"></item>
+        <item identifierRef="art-8106456566298903669"></item>
+        <item identifierRef="art-8106456566298903671"></item>
+        <item identifierRef="art-8106456566298903673"></item>
+        <item identifierRef="art-8106456566298903675"></item>
+        <item identifierRef="art-8106456566298903677"></item>
+        <item identifierRef="art-8106456566298903679"></item>
+        <item identifierRef="art-8106456566298903681"></item>
+        <item identifierRef="art-8106456566298903683"></item>
+        <item identifierRef="art-8106456566298903685"></item>
+        <item identifierRef="art-8106456566298903687"></item>
+        <item identifierRef="art-8106456566298903689"></item>
+        <item identifierRef="art-8106456566298903693"></item>
+        <item identifierRef="art-8106456566298903697"></item>
+        <item identifierRef="art-8106456566298903699"></item>
+        <item identifierRef="art-8106456566298903701"></item>
+        <item identifierRef="art-8106456566298903703"></item>
+        <item identifierRef="art-8106456566298903705"></item>
+        <item identifierRef="art-8106456566298903707"></item>
+        <item identifierRef="art-8106456566298903709"></item>
+        <item identifierRef="art-8106456566298903711"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Services</label>
+        <item identifierRef="ts-8106456566298903654"></item>
+        <item identifierRef="ts-8106456566298903661"></item>
+        <item identifierRef="ts-8106456566298903664"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="tif-8106456566298903567"></item>
+        <item identifierRef="tif-8106456566298903592"></item>
+        <item identifierRef="tif-8106456566298903653"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Node</label>
+        <item identifierRef="n-8106456566298903238"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">System Software</label>
+        <item identifierRef="sysof-8106456566298903360"></item>
+        <item identifierRef="sysof-8106456566298903385"></item>
+        <item identifierRef="sysof-8106456566298903446"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Relations</label>
+      <item>
+        <label xml:lang="en">Structural</label>
+        <item>
+          <label xml:lang="en">Assignment</label>
+          <item identifierRef="ass-8106456566298902712"></item>
+          <item identifierRef="ass-8106456566298902713"></item>
+          <item identifierRef="ass-8106456566298902717"></item>
+          <item identifierRef="ass-8106456566298902719"></item>
+          <item identifierRef="ass-8106456566298902720"></item>
+          <item identifierRef="ass-8106456566298902721"></item>
+          <item identifierRef="ass-8106456566298902722"></item>
+          <item identifierRef="ass-8106456566298902723"></item>
+          <item identifierRef="ass-8106456566298902724"></item>
+          <item identifierRef="ass-8106456566298902725"></item>
+          <item identifierRef="ass-8106456566298902726"></item>
+          <item identifierRef="ass-8106456566298902727"></item>
+          <item identifierRef="ass-8106456566298902728"></item>
+          <item identifierRef="ass-8106456566298902729"></item>
+          <item identifierRef="ass-8106456566298902730"></item>
+          <item identifierRef="ass-8106456566298902731"></item>
+          <item identifierRef="ass-8106456566298902732"></item>
+          <item identifierRef="ass-8106456566298902733"></item>
+          <item identifierRef="ass-8106456566298902734"></item>
+          <item identifierRef="ass-8106456566298902735"></item>
+          <item identifierRef="ass-8106456566298902736"></item>
+          <item identifierRef="ass-8106456566298902737"></item>
+          <item identifierRef="ass-8106456566298902738"></item>
+          <item identifierRef="ass-8106456566298902739"></item>
+          <item identifierRef="ass-8106456566298902740"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Composition</label>
+          <item identifierRef="comp-8106456566298902763"></item>
+          <item identifierRef="comp-8106456566298902764"></item>
+          <item identifierRef="comp-8106456566298902765"></item>
+          <item identifierRef="comp-8106456566298902766"></item>
+          <item identifierRef="comp-8106456566298902768"></item>
+          <item identifierRef="comp-8106456566298902771"></item>
+          <item identifierRef="comp-8106456566298902772"></item>
+          <item identifierRef="comp-8106456566298902773"></item>
+          <item identifierRef="comp-8106456566298902774"></item>
+          <item identifierRef="comp-8106456566298902775"></item>
+          <item identifierRef="comp-8106456566298902776"></item>
+          <item identifierRef="comp-8106456566298902786"></item>
+          <item identifierRef="comp-8106456566298902788"></item>
+          <item identifierRef="comp-8106456566298902791"></item>
+          <item identifierRef="comp-8106456566298902796"></item>
+          <item identifierRef="comp-8106456566298902797"></item>
+          <item identifierRef="comp-8106456566298902798"></item>
+          <item identifierRef="comp-8106456566298902799"></item>
+          <item identifierRef="comp-8106456566298902800"></item>
+          <item identifierRef="comp-8106456566298902804"></item>
+          <item identifierRef="comp-8106456566298902811"></item>
+          <item identifierRef="comp-8106456566298902816"></item>
+          <item identifierRef="comp-8106456566298902822"></item>
+          <item identifierRef="comp-8106456566298902827"></item>
+          <item identifierRef="comp-8106456566298902828"></item>
+          <item identifierRef="comp-8106456566298902829"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Realization</label>
+          <item identifierRef="rl-8106456566298902741"></item>
+          <item identifierRef="rl-8106456566298902742"></item>
+          <item identifierRef="rl-8106456566298902743"></item>
+          <item identifierRef="rl-8106456566298902744"></item>
+          <item identifierRef="rl-8106456566298902745"></item>
+          <item identifierRef="rl-8106456566298902746"></item>
+          <item identifierRef="rl-8106456566298902747"></item>
+          <item identifierRef="rl-8106456566298902748"></item>
+          <item identifierRef="rl-8106456566298902749"></item>
+          <item identifierRef="rl-8106456566298902750"></item>
+          <item identifierRef="rl-8106456566298902751"></item>
+          <item identifierRef="rl-8106456566298902752"></item>
+          <item identifierRef="rl-8106456566298902753"></item>
+          <item identifierRef="rl-8106456566298902754"></item>
+          <item identifierRef="rl-8106456566298902755"></item>
+          <item identifierRef="rl-8106456566298902756"></item>
+          <item identifierRef="rl-8106456566298902757"></item>
+          <item identifierRef="rl-8106456566298902758"></item>
+          <item identifierRef="rl-8106456566298902759"></item>
+          <item identifierRef="rl-8106456566298902760"></item>
+          <item identifierRef="rl-8106456566298902761"></item>
+          <item identifierRef="rl-8106456566298902762"></item>
+        </item>
+      </item>
+      <item>
+        <label xml:lang="en">Dependency</label>
+        <item>
+          <label xml:lang="en">Serving</label>
+          <item identifierRef="sv-8106456566298902648"></item>
+          <item identifierRef="sv-8106456566298902649"></item>
+          <item identifierRef="sv-8106456566298902650"></item>
+          <item identifierRef="sv-8106456566298902651"></item>
+          <item identifierRef="sv-8106456566298902652"></item>
+          <item identifierRef="sv-8106456566298902653"></item>
+          <item identifierRef="sv-8106456566298902654"></item>
+          <item identifierRef="sv-8106456566298902655"></item>
+          <item identifierRef="sv-8106456566298902656"></item>
+          <item identifierRef="sv-8106456566298902657"></item>
+          <item identifierRef="sv-8106456566298902658"></item>
+          <item identifierRef="sv-8106456566298902659"></item>
+          <item identifierRef="sv-8106456566298902660"></item>
+          <item identifierRef="sv-8106456566298902661"></item>
+          <item identifierRef="sv-8106456566298902662"></item>
+          <item identifierRef="sv-8106456566298902663"></item>
+          <item identifierRef="sv-8106456566298902664"></item>
+          <item identifierRef="sv-8106456566298902665"></item>
+          <item identifierRef="sv-8106456566298902666"></item>
+          <item identifierRef="sv-8106456566298902667"></item>
+          <item identifierRef="sv-8106456566298902668"></item>
+          <item identifierRef="sv-8106456566298902669"></item>
+          <item identifierRef="sv-8106456566298902670"></item>
+          <item identifierRef="sv-8106456566298902671"></item>
+          <item identifierRef="sv-8106456566298902672"></item>
+          <item identifierRef="sv-8106456566298902673"></item>
+          <item identifierRef="sv-8106456566298902674"></item>
+          <item identifierRef="sv-8106456566298902675"></item>
+          <item identifierRef="sv-8106456566298902676"></item>
+          <item identifierRef="sv-8106456566298902677"></item>
+          <item identifierRef="sv-8106456566298902678"></item>
+          <item identifierRef="sv-8106456566298902679"></item>
+          <item identifierRef="sv-8106456566298902680"></item>
+          <item identifierRef="sv-8106456566298902681"></item>
+          <item identifierRef="sv-8106456566298902682"></item>
+          <item identifierRef="sv-8106456566298902683"></item>
+          <item identifierRef="sv-8106456566298902684"></item>
+          <item identifierRef="sv-8106456566298902685"></item>
+          <item identifierRef="sv-8106456566298902686"></item>
+          <item identifierRef="sv-8106456566298902687"></item>
+          <item identifierRef="sv-8106456566298902688"></item>
+          <item identifierRef="sv-8106456566298902689"></item>
+          <item identifierRef="sv-8106456566298902690"></item>
+          <item identifierRef="sv-8106456566298902691"></item>
+          <item identifierRef="sv-8106456566298902692"></item>
+          <item identifierRef="sv-8106456566298902693"></item>
+          <item identifierRef="sv-8106456566298902694"></item>
+          <item identifierRef="sv-8106456566298902695"></item>
+          <item identifierRef="sv-8106456566298902696"></item>
+          <item identifierRef="sv-8106456566298902697"></item>
+          <item identifierRef="sv-8106456566298902698"></item>
+          <item identifierRef="sv-8106456566298902699"></item>
+          <item identifierRef="sv-8106456566298902700"></item>
+          <item identifierRef="sv-8106456566298902701"></item>
+          <item identifierRef="sv-8106456566298902702"></item>
+          <item identifierRef="sv-8106456566298902703"></item>
+          <item identifierRef="sv-8106456566298902704"></item>
+          <item identifierRef="sv-8106456566298902705"></item>
+          <item identifierRef="sv-8106456566298902706"></item>
+          <item identifierRef="sv-8106456566298902707"></item>
+          <item identifierRef="sv-8106456566298902708"></item>
+          <item identifierRef="sv-8106456566298902709"></item>
+          <item identifierRef="sv-8106456566298902710"></item>
+          <item identifierRef="sv-8106456566298902711"></item>
+        </item>
+      </item>
+    </item>
+  </organizations>
+  
+  <propertyDefinitions>
+    <propertyDefinition identifier="propdef-8106456566298902830" type="string">
+      <name>ansible_connection</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902831" type="string">
+      <name>GF_INSTALL_PLUGINS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902832" type="string">
+      <name>METRICS_STORAGE_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902833" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902834" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902835" type="string">
+      <name>OTEL_COLLECTOR_PORT_HTTP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902836" type="string">
+      <name>ENVOY_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902837" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902838" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902839" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902840" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902841" type="string">
+      <name>OTEL_LOGS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902842" type="string">
+      <name>AD_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902843" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902844" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902845" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902846" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902847" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902848" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902849" type="string">
+      <name>OTEL_LOGS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902850" type="string">
+      <name>AD_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902851" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902852" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902853" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902854" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902855" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902856" type="string">
+      <name>CART_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902857" type="string">
+      <name>VALKEY_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902858" type="string">
+      <name>REDIS_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902859" type="string">
+      <name>ASPNETCORE_URLS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902860" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902861" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902862" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902863" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902864" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902865" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902866" type="string">
+      <name>OTEL_LOGS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902867" type="string">
+      <name>CHECKOUT_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902868" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902869" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902870" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902871" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902872" type="string">
+      <name>EMAIL_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902873" type="string">
+      <name>PAYMENT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902874" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902875" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902876" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902877" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902878" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902879" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902880" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902881" type="string">
+      <name>CURRENCY_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902882" type="string">
+      <name>OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902883" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902884" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902885" type="string">
+      <name>EMAIL_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902886" type="string">
+      <name>APP_ENV</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902887" type="string">
+      <name>FLAGD_OTEL_COLLECTOR_URI</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902888" type="string">
+      <name>FLAGD_METRICS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902889" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902890" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902891" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902892" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902893" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902894" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902895" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902896" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902897" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902898" type="string">
+      <name>OTEL_INSTRUMENTATION_KAFKA_EXPERIMENTAL_SPAN_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902899" type="string">
+      <name>OTEL_INSTRUMENTATION_MESSAGING_EXPERIMENTAL_RECEIVE_TELEMETRY_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902900" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902901" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902902" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902903" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902904" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902905" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902906" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902907" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902908" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902909" type="string">
+      <name>FRONTEND_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902910" type="string">
+      <name>AD_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902911" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902912" type="string">
+      <name>CHECKOUT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902913" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902914" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902915" type="string">
+      <name>RECOMMENDATION_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902916" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902917" type="string">
+      <name>ENV_PLATFORM</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902918" type="string">
+      <name>PUBLIC_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902919" type="string">
+      <name>WEB_OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902920" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902921" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902922" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902923" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902924" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902925" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902926" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902927" type="string">
+      <name>OTEL_COLLECTOR_PORT_HTTP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902928" type="string">
+      <name>FRONTEND_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902929" type="string">
+      <name>FRONTEND_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902930" type="string">
+      <name>GRAFANA_SERVICE_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902931" type="string">
+      <name>GRAFANA_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902932" type="string">
+      <name>IMAGE_PROVIDER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902933" type="string">
+      <name>IMAGE_PROVIDER_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902934" type="string">
+      <name>JAEGER_SERVICE_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902935" type="string">
+      <name>JAEGER_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902936" type="string">
+      <name>LOCUST_WEB_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902937" type="string">
+      <name>LOCUST_WEB_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902938" type="string">
+      <name>ENVOY_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902939" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902940" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902941" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902942" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902943" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902944" type="string">
+      <name>IMAGE_PROVIDER_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902945" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902946" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902947" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902948" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902949" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902950" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902951" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902952" type="string">
+      <name>PUBLIC_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902953" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902954" type="string">
+      <name>LOCUST_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902955" type="string">
+      <name>LOCUST_WEB_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902956" type="string">
+      <name>LOCUST_USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902957" type="string">
+      <name>LOCUST_HEADLESS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902958" type="string">
+      <name>LOCUST_AUTOSTART</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902959" type="string">
+      <name>LOCUST_BROWSER_TRAFFIC_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902960" type="string">
+      <name>PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902961" type="string">
+      <name>LOCUST_WEB_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902962" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902963" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902964" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902965" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902966" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902967" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902968" type="string">
+      <name>PAYMENT_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902969" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902970" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902971" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902972" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902973" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902974" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902975" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902976" type="string">
+      <name>MONGO_HOSTNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902977" type="string">
+      <name>MONGO_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902978" type="string">
+      <name>MONGO_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902979" type="string">
+      <name>MONGO_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902980" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902981" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902982" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902983" type="string">
+      <name>OTEL_PHP_AUTOLOAD_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902984" type="string">
+      <name>OTEL_PHP_INTERNAL_METRICS_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902985" type="string">
+      <name>QUOTE_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902986" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902987" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902988" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902989" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902990" type="string">
+      <name>OTEL_PYTHON_LOG_CORRELATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902991" type="string">
+      <name>RECOMMENDATION_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902992" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902993" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902994" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902995" type="string">
+      <name>PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902996" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902997" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902998" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298902999" type="string">
+      <name>SHIPPING_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903000" type="string">
+      <name>QUOTE_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903001" type="string">
+      <name>cluster.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903002" type="string">
+      <name>node.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903003" type="string">
+      <name>bootstrap.memory_lock</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903004" type="string">
+      <name>discovery.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903005" type="string">
+      <name>OPENSEARCH_JAVA_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903006" type="string">
+      <name>DISABLE_INSTALL_DEMO_CONFIG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903007" type="string">
+      <name>DISABLE_SECURITY_PLUGIN</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903008" type="string">
+      <name>MONGO_INITDB_ROOT_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903009" type="string">
+      <name>MONGO_INITDB_ROOT_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903010" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903011" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903012" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903013" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903014" type="string">
+      <name>KAFKA_HEAP_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903015" type="string">
+      <name>KAFKA_ADVERTISED_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903016" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903017" type="string">
+      <name>ansible_connection</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903018" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903019" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903020" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903021" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903022" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903023" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903024" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903025" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903026" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903027" type="string">
+      <name>OTEL_LOGS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903028" type="string">
+      <name>AD_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903029" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903030" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903031" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903032" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903033" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903034" type="string">
+      <name>CART_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903035" type="string">
+      <name>VALKEY_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903036" type="string">
+      <name>REDIS_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903037" type="string">
+      <name>ASPNETCORE_URLS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903038" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903039" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903040" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903041" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903042" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903043" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903044" type="string">
+      <name>OTEL_LOGS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903045" type="string">
+      <name>CHECKOUT_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903046" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903047" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903048" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903049" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903050" type="string">
+      <name>EMAIL_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903051" type="string">
+      <name>PAYMENT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903052" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903053" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903054" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903055" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903056" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903057" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903058" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903059" type="string">
+      <name>CURRENCY_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903060" type="string">
+      <name>OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903061" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903062" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903063" type="string">
+      <name>EMAIL_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903064" type="string">
+      <name>APP_ENV</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903065" type="string">
+      <name>FLAGD_OTEL_COLLECTOR_URI</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903066" type="string">
+      <name>FLAGD_METRICS_EXPORTER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903067" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903068" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903069" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903070" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903071" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903072" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903073" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903074" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903075" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903076" type="string">
+      <name>OTEL_INSTRUMENTATION_KAFKA_EXPERIMENTAL_SPAN_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903077" type="string">
+      <name>OTEL_INSTRUMENTATION_MESSAGING_EXPERIMENTAL_RECEIVE_TELEMETRY_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903078" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903079" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903080" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903081" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903082" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903083" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903084" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903085" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903086" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903087" type="string">
+      <name>FRONTEND_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903088" type="string">
+      <name>AD_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903089" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903090" type="string">
+      <name>CHECKOUT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903091" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903092" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903093" type="string">
+      <name>RECOMMENDATION_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903094" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903095" type="string">
+      <name>ENV_PLATFORM</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903096" type="string">
+      <name>PUBLIC_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903097" type="string">
+      <name>WEB_OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903098" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903099" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903100" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903101" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903102" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903103" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903104" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903105" type="string">
+      <name>OTEL_COLLECTOR_PORT_HTTP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903106" type="string">
+      <name>FRONTEND_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903107" type="string">
+      <name>FRONTEND_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903108" type="string">
+      <name>GRAFANA_SERVICE_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903109" type="string">
+      <name>GRAFANA_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903110" type="string">
+      <name>IMAGE_PROVIDER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903111" type="string">
+      <name>IMAGE_PROVIDER_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903112" type="string">
+      <name>JAEGER_SERVICE_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903113" type="string">
+      <name>JAEGER_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903114" type="string">
+      <name>LOCUST_WEB_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903115" type="string">
+      <name>LOCUST_WEB_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903116" type="string">
+      <name>ENVOY_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903117" type="string">
+      <name>GF_INSTALL_PLUGINS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903118" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903119" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903120" type="string">
+      <name>VERSION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903121" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903122" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903123" type="string">
+      <name>IMAGE_PROVIDER_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903124" type="string">
+      <name>METRICS_STORAGE_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903125" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903126" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903127" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903128" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903129" type="string">
+      <name>KAFKA_HEAP_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903130" type="string">
+      <name>KAFKA_ADVERTISED_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903131" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903132" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903133" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903134" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903135" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903136" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903137" type="string">
+      <name>KAFKA_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903138" type="string">
+      <name>PUBLIC_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903139" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903140" type="string">
+      <name>LOCUST_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903141" type="string">
+      <name>LOCUST_WEB_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903142" type="string">
+      <name>LOCUST_USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903143" type="string">
+      <name>LOCUST_HEADLESS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903144" type="string">
+      <name>LOCUST_AUTOSTART</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903145" type="string">
+      <name>LOCUST_BROWSER_TRAFFIC_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903146" type="string">
+      <name>PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903147" type="string">
+      <name>LOCUST_WEB_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903148" type="string">
+      <name>MONGO_INITDB_ROOT_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903149" type="string">
+      <name>MONGO_INITDB_ROOT_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903150" type="string">
+      <name>cluster.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903151" type="string">
+      <name>node.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903152" type="string">
+      <name>bootstrap.memory_lock</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903153" type="string">
+      <name>discovery.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903154" type="string">
+      <name>OPENSEARCH_JAVA_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903155" type="string">
+      <name>DISABLE_INSTALL_DEMO_CONFIG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903156" type="string">
+      <name>DISABLE_SECURITY_PLUGIN</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903157" type="string">
+      <name>OTEL_COLLECTOR_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903158" type="string">
+      <name>OTEL_COLLECTOR_PORT_GRPC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903159" type="string">
+      <name>OTEL_COLLECTOR_PORT_HTTP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903160" type="string">
+      <name>ENVOY_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903161" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903162" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903163" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903164" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903165" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903166" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903167" type="string">
+      <name>PAYMENT_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903168" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903169" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903170" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903171" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903172" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903173" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903174" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903175" type="string">
+      <name>MONGO_HOSTNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903176" type="string">
+      <name>MONGO_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903177" type="string">
+      <name>MONGO_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903178" type="string">
+      <name>MONGO_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903179" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903180" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903181" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903182" type="string">
+      <name>OTEL_PHP_AUTOLOAD_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903183" type="string">
+      <name>OTEL_PHP_INTERNAL_METRICS_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903184" type="string">
+      <name>QUOTE_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903185" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903186" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903187" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903188" type="string">
+      <name>OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903189" type="string">
+      <name>OTEL_PYTHON_LOG_CORRELATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903190" type="string">
+      <name>RECOMMENDATION_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903191" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903192" type="string">
+      <name>FLAGD_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903193" type="string">
+      <name>FLAGD_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903194" type="string">
+      <name>PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903195" type="string">
+      <name>OTEL_EXPORTER_OTLP_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903196" type="string">
+      <name>OTEL_RESOURCE_ATTRIBUTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903197" type="string">
+      <name>OTEL_SERVICE_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903198" type="string">
+      <name>SHIPPING_SERVICE_PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903199" type="string">
+      <name>QUOTE_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903200" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-accountingservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903201" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-adservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903202" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-cartservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903203" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-checkoutservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903204" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-currencyservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903205" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-emailservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903206" type="string">
+      <name>ghcr.io/open-feature/flagd:v0.11.2</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903207" type="string">
+      <name>demo.flagd.json</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903208" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-frauddetectionservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903209" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-frontend</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903210" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-frontendproxy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903211" type="string">
+      <name>grafana/grafana:11.2.0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903212" type="string">
+      <name>opentelemetry-collector.json</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903213" type="string">
+      <name>demo-dashboard.json</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903214" type="string">
+      <name>opensearch.yaml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903215" type="string">
+      <name>jaeger.yaml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903216" type="string">
+      <name>grafana.ini</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903217" type="string">
+      <name>demo.yaml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903218" type="string">
+      <name>default.yaml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903219" type="string">
+      <name>spanmetrics-dashboard.json</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903220" type="string">
+      <name>opentelemetry-collector-data-flow.json</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903221" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-imageprovider</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903222" type="string">
+      <name>jaegertracing/all-in-one:1.60</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903223" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-kafka</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903224" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-loadgenerator</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903225" type="string">
+      <name>mongo:8.0.0-rc9</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903226" type="string">
+      <name>opensearchproject/opensearch:2.16.0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903227" type="string">
+      <name>otel/opentelemetry-collector-contrib:0.108.0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903228" type="string">
+      <name>otelcol-config-extras.yml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903229" type="string">
+      <name>otelcol-config.yml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903230" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-paymentservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903231" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-productcatalogservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903232" type="string">
+      <name>quay.io/prometheus/prometheus:v2.54.1</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903233" type="string">
+      <name>prometheus-config.yaml</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903234" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-quoteservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903235" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-recommendationservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903236" type="string">
+      <name>ghcr.io/open-telemetry/demo:1.11.1-shippingservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566298903237" type="string">
+      <name>valkey/valkey:8.0-alpine</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  
+  <views>    
+    <diagrams>
+      <view identifier="id-001" xsi:type="Diagram">
+        <name xml:lang="en">Default View</name>
+      </view>
+    </diagrams>
+  </views>
+  
+</model>

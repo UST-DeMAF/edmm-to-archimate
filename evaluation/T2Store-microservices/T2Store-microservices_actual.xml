@@ -1,0 +1,3462 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd" identifier="model1-1" version="1.0">
+  <name xml:lang="en">ArchiMate Model based on t2storeMicroservices_expected.yaml</name>
+  
+  <elements>    
+    <element identifier="n-8106456566304887065" xsi:type="Node">      
+      <name xml:lang="en">MicrosoftAzure</name>
+    </element>
+    <element identifier="n-8106456566304887066" xsi:type="Node">      
+      <name xml:lang="en">t2store</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886818">
+          <value>t2store-aks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886819">
+          <value>West Europe</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886820">
+          <value>t2store-resources</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886821">
+          <value>t2storeaks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886822">
+          <value>default_node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886823">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886824">
+          <value>standard_b4ms</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886825">
+          <value>SystemAssigned</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886826">
+          <value>{"Environment":"Production"}</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887076" xsi:type="SystemSoftware">      
+      <name xml:lang="en">mongo-cart-mongodb</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886827">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886828">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886829">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886830">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886831">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886832">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886833">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886834">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886835">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886836">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886837">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886838">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887089" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-cart-mongodb-datadir-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886839">
+          <value>8Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887091" xsi:type="SystemSoftware">      
+      <name xml:lang="en">mongo-order-mongodb</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886840">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886841">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886842">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886843">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886844">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886845">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886846">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886847">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886848">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886849">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886850">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886851">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887104" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-order-mongodb-datadir-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886852">
+          <value>8Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887106" xsi:type="SystemSoftware">      
+      <name xml:lang="en">kafka</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886853">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886854">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886855">
+          <value>kafka-zookeeper</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886856">
+          <value>INTERNAL</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886857">
+          <value>INTERNAL:PLAINTEXT,CLIENT:PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886858">
+          <value>INTERNAL://:9093,CLIENT://:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886859">
+          <value>INTERNAL://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9093,CLIENT://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886860">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886861">
+          <value>PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886862">
+          <value>/bitnami/kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886863">
+          <value>/opt/bitnami/kafka/logs</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886864">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886865">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886866">
+          <value>-Xmx1024m -Xms1024m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886867">
+          <value>10000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886868">
+          <value>1000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886869">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886870">
+          <value>300000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886871">
+          <value>168</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886872">
+          <value>1000012</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886873">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886874">
+          <value>/bitnami/kafka/data</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886875">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886876">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886877">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886878">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886879">
+          <value>8</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886880">
+          <value>3</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886881">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886882">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886883">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886884">
+          <value>104857600</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886885">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886886">
+          <value>6000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886887">
+          <value></value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886888">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886889">
+          <value>User:admin</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886890">
+          <value>9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886891">
+          <value>9093</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886892">
+          <value>9092:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886893">
+          <value>9093:9093</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887148" xsi:type="TechnologyService">      
+      <name xml:lang="en">kafka-data-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886894">
+          <value>8Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887150" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">kafka-zookeeper</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886895">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886896">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886897">
+          <value></value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886898">
+          <value>2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886899">
+          <value>2000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886900">
+          <value>10</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886901">
+          <value>5</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886902">
+          <value>65536</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886903">
+          <value>100000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886904">
+          <value>60</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886905">
+          <value>srvr, mntr, ruok</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886906">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886907">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886908">
+          <value>3</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886909">
+          <value>40000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886910">
+          <value>kafka-zookeeper-0.kafka-zookeeper-headless.default.svc.cluster.local:2888:3888::1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886911">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886912">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886913">
+          <value>1024</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886914">
+          <value>ERROR</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886915">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886916">
+          <value>2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886917">
+          <value>2888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886918">
+          <value>3888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886919">
+          <value>2181:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886920">
+          <value>2888:2888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886921">
+          <value>3888:3888</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887178" xsi:type="TechnologyService">      
+      <name xml:lang="en">kafka-zookeeper-data-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886922">
+          <value>8Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887180" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">cart</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886923">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886924">
+          <value>mongo-cart-mongodb</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886925">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886926">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886927">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886928">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886929">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886930">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887189" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">cdcservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886931">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886932">
+          <value>-Xmx64m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886933">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886934">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886935">
+          <value>eventuate-tram</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886936">
+          <value>reader1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886937">
+          <value>eventuate-tram</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886938">
+          <value>reader2</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886939">
+          <value>postgres-wal</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886940">
+          <value>jdbc:postgresql://postgres-orchestrator/eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886941">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886942">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886943">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886944">
+          <value>/eventuate/cdc/leader/orchestrator</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886945">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886946">
+          <value>postgres-wal</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886947">
+          <value>jdbc:postgresql://postgres-inventory/inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886948">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886949">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886950">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886951">
+          <value>/eventuate/cdc/leader/inventory_service</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886952">
+          <value>2</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886953">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886954">
+          <value>8099:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887214" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">creditinstitute</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886955">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886956">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886957">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886958">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886959">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887220" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">inventory</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886960">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886961">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886962">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886963">
+          <value>25</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886964">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886965">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886966">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886967">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886968">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886969">
+          <value>jdbc:postgresql://postgres-inventory/inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886970">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886971">
+          <value>saga</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886972">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886973">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886974">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886975">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887237" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">orchestrator</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886976">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886977">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886978">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886979">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886980">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886981">
+          <value>jdbc:postgresql://postgres-orchestrator/eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886982">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886983">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886984">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886985">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886986">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887249" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">order</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886987">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886988">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886989">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886990">
+          <value>mongo-order-mongodb</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886991">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886992">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886993">
+          <value>jdbc:postgresql://postgres-orchestrator/eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886994">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886995">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886996">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886997">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886998">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887262" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">payment</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886999">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887000">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887001">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887002">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887003">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887004">
+          <value>jdbc:postgresql://postgres-orchestrator/eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887005">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887006">
+          <value>TRUE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887007">
+          <value>http://creditinstitute/pay</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887008">
+          <value>5</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887009">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887010">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887011">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887012">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887277" xsi:type="SystemSoftware">      
+      <name xml:lang="en">postgres-inventory</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887013">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887014">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887015">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887016">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887017">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887018">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887019">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887285" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres-inventory-datadir-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887020">
+          <value>1Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304887287" xsi:type="SystemSoftware">      
+      <name xml:lang="en">postgres-orchestrator</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887021">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887022">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887023">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887024">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887025">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887026">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887027">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887295" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres-orchestrator-datadir-volume</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887028">
+          <value>1Gi</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887297" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">ui</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887029">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887030">
+          <value>http://uibackend</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887031">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887032">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304887302" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">uibackend</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887033">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887034">
+          <value>http://orchestrator/order</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887035">
+          <value>http://cart/cart</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887036">
+          <value>http://inventory/inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887037">
+          <value>reservation</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887038">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887039">
+          <value>http://computation-simulator/compute</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887040">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887041">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887042">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887043">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887314" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">mongo-cart-mongodb Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886827">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886828">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886829">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886830">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886831">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886832">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886833">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886834">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886835">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886836">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886837">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886838">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887327" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">mongo-order-mongodb Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886840">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886841">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886842">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886843">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886844">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886845">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886846">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886847">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886848">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886849">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886850">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886851">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887340" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">kafka Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886853">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886854">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886855">
+          <value>kafka-zookeeper</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886856">
+          <value>INTERNAL</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886857">
+          <value>INTERNAL:PLAINTEXT,CLIENT:PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886858">
+          <value>INTERNAL://:9093,CLIENT://:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886859">
+          <value>INTERNAL://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9093,CLIENT://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886860">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886861">
+          <value>PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886862">
+          <value>/bitnami/kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886863">
+          <value>/opt/bitnami/kafka/logs</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886864">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886865">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886866">
+          <value>-Xmx1024m -Xms1024m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886867">
+          <value>10000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886868">
+          <value>1000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886869">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886870">
+          <value>300000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886871">
+          <value>168</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886872">
+          <value>1000012</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886873">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886874">
+          <value>/bitnami/kafka/data</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886875">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886876">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886877">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886878">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886879">
+          <value>8</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886880">
+          <value>3</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886881">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886882">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886883">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886884">
+          <value>104857600</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886885">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886886">
+          <value>6000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886887">
+          <value></value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886888">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886889">
+          <value>User:admin</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886890">
+          <value>9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886891">
+          <value>9093</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886892">
+          <value>9092:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886893">
+          <value>9093:9093</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887382" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">kafka-zookeeper Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886895">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886896">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886897">
+          <value></value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886898">
+          <value>2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886899">
+          <value>2000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886900">
+          <value>10</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886901">
+          <value>5</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886902">
+          <value>65536</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886903">
+          <value>100000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886904">
+          <value>60</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886905">
+          <value>srvr, mntr, ruok</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886906">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886907">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886908">
+          <value>3</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886909">
+          <value>40000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886910">
+          <value>kafka-zookeeper-0.kafka-zookeeper-headless.default.svc.cluster.local:2888:3888::1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886911">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886912">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886913">
+          <value>1024</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886914">
+          <value>ERROR</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886915">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886916">
+          <value>2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886917">
+          <value>2888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886918">
+          <value>3888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886919">
+          <value>2181:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886920">
+          <value>2888:2888</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886921">
+          <value>3888:3888</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887410" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">cart Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886923">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886924">
+          <value>mongo-cart-mongodb</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886925">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886926">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886927">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886928">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886929">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886930">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887444" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">creditinstitute Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886955">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886956">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886957">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886958">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886959">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887450" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">inventory Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886960">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886961">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886962">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886963">
+          <value>25</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886964">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886965">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886966">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886967">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886968">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886969">
+          <value>jdbc:postgresql://postgres-inventory/inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886970">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886971">
+          <value>saga</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886972">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886973">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886974">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886975">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887467" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">orchestrator Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886976">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886977">
+          <value>kafka:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886978">
+          <value>kafka-zookeeper:2181</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886979">
+          <value>org.postgresql.Driver</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886980">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886981">
+          <value>jdbc:postgresql://postgres-orchestrator/eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886982">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886983">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886984">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886985">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886986">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887507" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">postgres-inventory Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887013">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887014">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887015">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887016">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887017">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887018">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887019">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304887515" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">postgres-orchestrator Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887021">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887022">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887023">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887024">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887025">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887026">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887027">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304887528" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">uibackend Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887033">
+          <value>Always</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887034">
+          <value>http://orchestrator/order</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887035">
+          <value>http://cart/cart</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887036">
+          <value>http://inventory/inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887037">
+          <value>reservation</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887038">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887039">
+          <value>http://computation-simulator/compute</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887040">
+          <value>FALSE</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887041">
+          <value>simplest-agent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887042">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887043">
+          <value>80:8080</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="dev-8106456566304887540" xsi:type="Device">      
+      <name xml:lang="en">t2store Device</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886818">
+          <value>t2store-aks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886819">
+          <value>West Europe</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886820">
+          <value>t2store-resources</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886821">
+          <value>t2storeaks1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886822">
+          <value>default_node</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886823">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886824">
+          <value>standard_b4ms</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886825">
+          <value>SystemAssigned</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886826">
+          <value>{"Environment":"Production"}</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887550" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-cart-mongodb Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886827">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886828">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886829">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886830">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886831">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886832">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886833">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886834">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886835">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886836">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886837">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886838">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887563" xsi:type="TechnologyService">      
+      <name xml:lang="en">mongo-order-mongodb Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886840">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886841">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886842">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886843">
+          <value>0</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886844">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886845">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886846">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886847">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886848">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886849">
+          <value>no</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886850">
+          <value>27017</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886851">
+          <value>27017:27017</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887576" xsi:type="TechnologyService">      
+      <name xml:lang="en">kafka Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304886853">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886854">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886855">
+          <value>kafka-zookeeper</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886856">
+          <value>INTERNAL</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886857">
+          <value>INTERNAL:PLAINTEXT,CLIENT:PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886858">
+          <value>INTERNAL://:9093,CLIENT://:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886859">
+          <value>INTERNAL://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9093,CLIENT://$(MY_POD_NAME).kafka-headless.default.svc.cluster.local:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886860">
+          <value>yes</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886861">
+          <value>PLAINTEXT</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886862">
+          <value>/bitnami/kafka</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886863">
+          <value>/opt/bitnami/kafka/logs</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886864">
+          <value>false</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886865">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886866">
+          <value>-Xmx1024m -Xms1024m</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886867">
+          <value>10000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886868">
+          <value>1000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886869">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886870">
+          <value>300000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886871">
+          <value>168</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886872">
+          <value>1000012</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886873">
+          <value>1073741824</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886874">
+          <value>/bitnami/kafka/data</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886875">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886876">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886877">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886878">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886879">
+          <value>8</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886880">
+          <value>3</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886881">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886882">
+          <value>1</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886883">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886884">
+          <value>104857600</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886885">
+          <value>102400</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886886">
+          <value>6000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886887">
+          <value></value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886888">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886889">
+          <value>User:admin</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886890">
+          <value>9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886891">
+          <value>9093</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886892">
+          <value>9092:9092</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304886893">
+          <value>9093:9093</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887618" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres-inventory Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887013">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887014">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887015">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887016">
+          <value>inventory</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887017">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887018">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887019">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304887626" xsi:type="TechnologyService">      
+      <name xml:lang="en">postgres-orchestrator Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887021">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887022">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887023">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887024">
+          <value>eventuate</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887025">
+          <value>true</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887026">
+          <value>5432</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304887027">
+          <value>5432:5432</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887640" xsi:type="Artifact">      
+      <name xml:lang="en">kafka-zookeeper docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887053">
+          <value>https://hub.docker.com/r/bitnami/zookeeper</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887642" xsi:type="Artifact">      
+      <name xml:lang="en">cart docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887054">
+          <value>https://hub.docker.com/r/t2project/cart</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887644" xsi:type="Artifact">      
+      <name xml:lang="en">cdcservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887055">
+          <value>https://hub.docker.com/r/eventuateio/eventuate-cdc-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887646" xsi:type="Artifact">      
+      <name xml:lang="en">creditinstitute docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887056">
+          <value>https://hub.docker.com/r/t2project/creditinstitute</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887648" xsi:type="Artifact">      
+      <name xml:lang="en">inventory docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887057">
+          <value>https://hub.docker.com/r/t2project/inventory</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887650" xsi:type="Artifact">      
+      <name xml:lang="en">orchestrator docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887058">
+          <value>https://hub.docker.com/r/t2project/orchestrator</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887652" xsi:type="Artifact">      
+      <name xml:lang="en">order docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887059">
+          <value>https://hub.docker.com/r/t2project/order</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887654" xsi:type="Artifact">      
+      <name xml:lang="en">payment docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887060">
+          <value>https://hub.docker.com/r/t2project/payment</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887660" xsi:type="Artifact">      
+      <name xml:lang="en">ui docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887063">
+          <value>https://hub.docker.com/r/t2project/ui</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304887662" xsi:type="Artifact">      
+      <name xml:lang="en">uibackend docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304887064">
+          <value>https://hub.docker.com/r/t2project/uibackend</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  
+  <relationships>    
+    
+    <relationship identifier="sv-8106456566304886513" source="ts-8106456566304887089" target="sysof-8106456566304887076" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886515" source="ts-8106456566304887104" target="sysof-8106456566304887091" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886517" source="ts-8106456566304887148" target="sysof-8106456566304887106" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886519" source="ts-8106456566304887178" target="appcomp-8106456566304887150" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886521" source="ts-8106456566304887285" target="sysof-8106456566304887277" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886523" source="ts-8106456566304887295" target="sysof-8106456566304887287" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886525" source="ts-8106456566304887576" target="appcomp-8106456566304887150" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886526" source="ts-8106456566304887550" target="appcomp-8106456566304887180" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886527" source="ts-8106456566304887576" target="appcomp-8106456566304887189" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886528" source="appinter-8106456566304887382" target="appcomp-8106456566304887189" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886529" source="ts-8106456566304887626" target="appcomp-8106456566304887189" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886530" source="ts-8106456566304887618" target="appcomp-8106456566304887189" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886531" source="ts-8106456566304887576" target="appcomp-8106456566304887220" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886532" source="appinter-8106456566304887382" target="appcomp-8106456566304887220" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886533" source="ts-8106456566304887618" target="appcomp-8106456566304887220" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886534" source="ts-8106456566304887576" target="appcomp-8106456566304887237" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886535" source="appinter-8106456566304887382" target="appcomp-8106456566304887237" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886536" source="ts-8106456566304887626" target="appcomp-8106456566304887237" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886537" source="ts-8106456566304887576" target="appcomp-8106456566304887249" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886538" source="appinter-8106456566304887382" target="appcomp-8106456566304887249" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886539" source="ts-8106456566304887563" target="appcomp-8106456566304887249" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886540" source="ts-8106456566304887626" target="appcomp-8106456566304887249" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886541" source="ts-8106456566304887576" target="appcomp-8106456566304887262" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886542" source="appinter-8106456566304887382" target="appcomp-8106456566304887262" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886543" source="ts-8106456566304887626" target="appcomp-8106456566304887262" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886544" source="appinter-8106456566304887444" target="appcomp-8106456566304887262" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886545" source="appinter-8106456566304887528" target="appcomp-8106456566304887297" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886546" source="appinter-8106456566304887467" target="appcomp-8106456566304887302" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886547" source="appinter-8106456566304887410" target="appcomp-8106456566304887302" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886548" source="appinter-8106456566304887450" target="appcomp-8106456566304887302" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304886549" source="dev-8106456566304887540" target="n-8106456566304887066" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886550" source="tif-8106456566304887340" target="ts-8106456566304887576" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886551" source="tif-8106456566304887314" target="ts-8106456566304887550" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886553" source="tif-8106456566304887515" target="ts-8106456566304887626" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886554" source="tif-8106456566304887507" target="ts-8106456566304887618" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886560" source="tif-8106456566304887327" target="ts-8106456566304887563" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886564" source="n-8106456566304887066" target="art-8106456566304887640" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886565" source="n-8106456566304887066" target="art-8106456566304887642" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886566" source="n-8106456566304887066" target="art-8106456566304887644" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886567" source="n-8106456566304887066" target="art-8106456566304887646" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886568" source="n-8106456566304887066" target="art-8106456566304887648" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886569" source="n-8106456566304887066" target="art-8106456566304887650" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886570" source="n-8106456566304887066" target="art-8106456566304887652" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886571" source="n-8106456566304887066" target="art-8106456566304887654" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886572" source="n-8106456566304887066" target="art-8106456566304887660" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304886573" source="n-8106456566304887066" target="art-8106456566304887662" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886574" source="art-8106456566304887640" target="appcomp-8106456566304887150" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886575" source="art-8106456566304887642" target="appcomp-8106456566304887180" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886576" source="art-8106456566304887644" target="appcomp-8106456566304887189" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886577" source="art-8106456566304887646" target="appcomp-8106456566304887214" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886578" source="art-8106456566304887648" target="appcomp-8106456566304887220" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886579" source="art-8106456566304887650" target="appcomp-8106456566304887237" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886580" source="art-8106456566304887652" target="appcomp-8106456566304887249" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886581" source="art-8106456566304887654" target="appcomp-8106456566304887262" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886582" source="art-8106456566304887660" target="appcomp-8106456566304887297" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304886583" source="art-8106456566304887662" target="appcomp-8106456566304887302" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886584" source="sysof-8106456566304887106" target="tif-8106456566304887340" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886585" source="sysof-8106456566304887076" target="tif-8106456566304887314" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886587" source="appcomp-8106456566304887150" target="appinter-8106456566304887382" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886588" source="sysof-8106456566304887287" target="tif-8106456566304887515" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886589" source="sysof-8106456566304887277" target="tif-8106456566304887507" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886598" source="sysof-8106456566304887091" target="tif-8106456566304887327" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886603" source="appcomp-8106456566304887214" target="appinter-8106456566304887444" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886604" source="appcomp-8106456566304887302" target="appinter-8106456566304887528" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886605" source="appcomp-8106456566304887237" target="appinter-8106456566304887467" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886606" source="appcomp-8106456566304887180" target="appinter-8106456566304887410" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886607" source="appcomp-8106456566304887220" target="appinter-8106456566304887450" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886608" source="n-8106456566304887066" target="sysof-8106456566304887076" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886609" source="n-8106456566304887066" target="sysof-8106456566304887091" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886610" source="n-8106456566304887066" target="sysof-8106456566304887106" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886611" source="n-8106456566304887066" target="sysof-8106456566304887277" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886612" source="n-8106456566304887066" target="sysof-8106456566304887287" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886613" source="n-8106456566304887065" target="n-8106456566304887066" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304886614" source="n-8106456566304887065" target="dev-8106456566304887540" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+  </relationships>
+  
+  <organizations>    
+    <item>      
+      <label xml:lang="en">Application</label>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="appinter-8106456566304887382"></item>
+        <item identifierRef="appinter-8106456566304887410"></item>
+        <item identifierRef="appinter-8106456566304887444"></item>
+        <item identifierRef="appinter-8106456566304887450"></item>
+        <item identifierRef="appinter-8106456566304887467"></item>
+        <item identifierRef="appinter-8106456566304887528"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Components</label>
+        <item identifierRef="appcomp-8106456566304887150"></item>
+        <item identifierRef="appcomp-8106456566304887180"></item>
+        <item identifierRef="appcomp-8106456566304887189"></item>
+        <item identifierRef="appcomp-8106456566304887214"></item>
+        <item identifierRef="appcomp-8106456566304887220"></item>
+        <item identifierRef="appcomp-8106456566304887237"></item>
+        <item identifierRef="appcomp-8106456566304887249"></item>
+        <item identifierRef="appcomp-8106456566304887262"></item>
+        <item identifierRef="appcomp-8106456566304887297"></item>
+        <item identifierRef="appcomp-8106456566304887302"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item>        
+        <label xml:lang="en">Artifacts</label>
+        <item identifierRef="art-8106456566304887640"></item>
+        <item identifierRef="art-8106456566304887642"></item>
+        <item identifierRef="art-8106456566304887644"></item>
+        <item identifierRef="art-8106456566304887646"></item>
+        <item identifierRef="art-8106456566304887648"></item>
+        <item identifierRef="art-8106456566304887650"></item>
+        <item identifierRef="art-8106456566304887652"></item>
+        <item identifierRef="art-8106456566304887654"></item>
+        <item identifierRef="art-8106456566304887660"></item>
+        <item identifierRef="art-8106456566304887662"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Services</label>
+        <item identifierRef="ts-8106456566304887089"></item>
+        <item identifierRef="ts-8106456566304887104"></item>
+        <item identifierRef="ts-8106456566304887148"></item>
+        <item identifierRef="ts-8106456566304887178"></item>
+        <item identifierRef="ts-8106456566304887285"></item>
+        <item identifierRef="ts-8106456566304887295"></item>
+        <item identifierRef="ts-8106456566304887550"></item>
+        <item identifierRef="ts-8106456566304887563"></item>
+        <item identifierRef="ts-8106456566304887576"></item>
+        <item identifierRef="ts-8106456566304887618"></item>
+        <item identifierRef="ts-8106456566304887626"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="tif-8106456566304887314"></item>
+        <item identifierRef="tif-8106456566304887327"></item>
+        <item identifierRef="tif-8106456566304887340"></item>
+        <item identifierRef="tif-8106456566304887507"></item>
+        <item identifierRef="tif-8106456566304887515"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Node</label>
+        <item identifierRef="n-8106456566304887065"></item>
+        <item identifierRef="n-8106456566304887066"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">System Software</label>
+        <item identifierRef="sysof-8106456566304887076"></item>
+        <item identifierRef="sysof-8106456566304887091"></item>
+        <item identifierRef="sysof-8106456566304887106"></item>
+        <item identifierRef="sysof-8106456566304887277"></item>
+        <item identifierRef="sysof-8106456566304887287"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Relations</label>
+      <item>
+        <label xml:lang="en">Structural</label>
+        <item>
+          <label xml:lang="en">Assignment</label>
+          <item identifierRef="ass-8106456566304886550"></item>
+          <item identifierRef="ass-8106456566304886551"></item>
+          <item identifierRef="ass-8106456566304886553"></item>
+          <item identifierRef="ass-8106456566304886554"></item>
+          <item identifierRef="ass-8106456566304886560"></item>
+          <item identifierRef="ass-8106456566304886564"></item>
+          <item identifierRef="ass-8106456566304886565"></item>
+          <item identifierRef="ass-8106456566304886566"></item>
+          <item identifierRef="ass-8106456566304886567"></item>
+          <item identifierRef="ass-8106456566304886568"></item>
+          <item identifierRef="ass-8106456566304886569"></item>
+          <item identifierRef="ass-8106456566304886570"></item>
+          <item identifierRef="ass-8106456566304886571"></item>
+          <item identifierRef="ass-8106456566304886572"></item>
+          <item identifierRef="ass-8106456566304886573"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Composition</label>
+          <item identifierRef="comp-8106456566304886584"></item>
+          <item identifierRef="comp-8106456566304886585"></item>
+          <item identifierRef="comp-8106456566304886587"></item>
+          <item identifierRef="comp-8106456566304886588"></item>
+          <item identifierRef="comp-8106456566304886589"></item>
+          <item identifierRef="comp-8106456566304886598"></item>
+          <item identifierRef="comp-8106456566304886603"></item>
+          <item identifierRef="comp-8106456566304886604"></item>
+          <item identifierRef="comp-8106456566304886605"></item>
+          <item identifierRef="comp-8106456566304886606"></item>
+          <item identifierRef="comp-8106456566304886607"></item>
+          <item identifierRef="comp-8106456566304886608"></item>
+          <item identifierRef="comp-8106456566304886609"></item>
+          <item identifierRef="comp-8106456566304886610"></item>
+          <item identifierRef="comp-8106456566304886611"></item>
+          <item identifierRef="comp-8106456566304886612"></item>
+          <item identifierRef="comp-8106456566304886613"></item>
+          <item identifierRef="comp-8106456566304886614"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Realization</label>
+          <item identifierRef="rl-8106456566304886574"></item>
+          <item identifierRef="rl-8106456566304886575"></item>
+          <item identifierRef="rl-8106456566304886576"></item>
+          <item identifierRef="rl-8106456566304886577"></item>
+          <item identifierRef="rl-8106456566304886578"></item>
+          <item identifierRef="rl-8106456566304886579"></item>
+          <item identifierRef="rl-8106456566304886580"></item>
+          <item identifierRef="rl-8106456566304886581"></item>
+          <item identifierRef="rl-8106456566304886582"></item>
+          <item identifierRef="rl-8106456566304886583"></item>
+        </item>
+      </item>
+      <item>
+        <label xml:lang="en">Dependency</label>
+        <item>
+          <label xml:lang="en">Serving</label>
+          <item identifierRef="sv-8106456566304886513"></item>
+          <item identifierRef="sv-8106456566304886515"></item>
+          <item identifierRef="sv-8106456566304886517"></item>
+          <item identifierRef="sv-8106456566304886519"></item>
+          <item identifierRef="sv-8106456566304886521"></item>
+          <item identifierRef="sv-8106456566304886523"></item>
+          <item identifierRef="sv-8106456566304886525"></item>
+          <item identifierRef="sv-8106456566304886526"></item>
+          <item identifierRef="sv-8106456566304886527"></item>
+          <item identifierRef="sv-8106456566304886528"></item>
+          <item identifierRef="sv-8106456566304886529"></item>
+          <item identifierRef="sv-8106456566304886530"></item>
+          <item identifierRef="sv-8106456566304886531"></item>
+          <item identifierRef="sv-8106456566304886532"></item>
+          <item identifierRef="sv-8106456566304886533"></item>
+          <item identifierRef="sv-8106456566304886534"></item>
+          <item identifierRef="sv-8106456566304886535"></item>
+          <item identifierRef="sv-8106456566304886536"></item>
+          <item identifierRef="sv-8106456566304886537"></item>
+          <item identifierRef="sv-8106456566304886538"></item>
+          <item identifierRef="sv-8106456566304886539"></item>
+          <item identifierRef="sv-8106456566304886540"></item>
+          <item identifierRef="sv-8106456566304886541"></item>
+          <item identifierRef="sv-8106456566304886542"></item>
+          <item identifierRef="sv-8106456566304886543"></item>
+          <item identifierRef="sv-8106456566304886544"></item>
+          <item identifierRef="sv-8106456566304886545"></item>
+          <item identifierRef="sv-8106456566304886546"></item>
+          <item identifierRef="sv-8106456566304886547"></item>
+          <item identifierRef="sv-8106456566304886548"></item>
+          <item identifierRef="sv-8106456566304886549"></item>
+        </item>
+      </item>
+    </item>
+  </organizations>
+  
+  <propertyDefinitions>
+    <propertyDefinition identifier="propdef-8106456566304886615" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886616" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886617" type="string">
+      <name>resource_group_name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886618" type="string">
+      <name>dns_prefix</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886619" type="string">
+      <name>default_node_pool.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886620" type="string">
+      <name>default_node_pool.node_count</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886621" type="string">
+      <name>default_node_pool.vm_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886622" type="string">
+      <name>identity.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886623" type="string">
+      <name>tags</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886624" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886625" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886626" type="string">
+      <name>T2_CART_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886627" type="string">
+      <name>T2_CART_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886628" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886629" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886630" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886631" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886632" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886633" type="string">
+      <name>JAVA_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886634" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886635" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886636" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE1_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886637" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE1_READER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886638" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE2_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886639" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE2_READER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886640" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886641" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEURL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886642" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEUSERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886643" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEPASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886644" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEDRIVERCLASSNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886645" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_LEADERSHIPLOCKPATH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886646" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_OUTBOXID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886647" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886648" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEURL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886649" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEUSERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886650" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEPASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886651" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEDRIVERCLASSNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886652" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_LEADERSHIPLOCKPATH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886653" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_OUTBOXID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886654" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886655" type="string">
+      <name>exposedPort_8099</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886656" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886657" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886658" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886659" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886660" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886661" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886662" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886663" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886664" type="string">
+      <name>T2_INVENTORY_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886665" type="string">
+      <name>T2_INVENTORY_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886666" type="string">
+      <name>T2_INVENTORY_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886667" type="string">
+      <name>T2_INVENTORY_SET_UNITS_TO_MAX</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886668" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886669" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886670" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886671" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886672" type="string">
+      <name>SPRING_PROFILES_ACTIVE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886673" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886674" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886675" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886676" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886677" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886678" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886679" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886680" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886681" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886682" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886683" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886684" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886685" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886686" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886687" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886688" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886689" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886690" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886691" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886692" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886693" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886694" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886695" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886696" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886697" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886698" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886699" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886700" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886701" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886702" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886703" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886704" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886705" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886706" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886707" type="string">
+      <name>T2_PAYMENT_PROVIDER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886708" type="string">
+      <name>T2_PAYMENT_PROVIDER_DUMMY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886709" type="string">
+      <name>T2_PAYMENT_PROVIDER_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886710" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886711" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886712" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886713" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886714" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886715" type="string">
+      <name>T2_UIBACKEND_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886716" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886717" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886718" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886719" type="string">
+      <name>T2_ORCHESTRATOR_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886720" type="string">
+      <name>T2_CART_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886721" type="string">
+      <name>T2_INVENTORY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886722" type="string">
+      <name>T2_RESERVATION_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886723" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886724" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886725" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886726" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886727" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886728" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886729" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886730" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886731" type="string">
+      <name>ALLOW_EMPTY_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886732" type="string">
+      <name>MONGODB_SYSTEM_LOG_VERBOSITY</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886733" type="string">
+      <name>MONGODB_DISABLE_SYSTEM_LOG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886734" type="string">
+      <name>MONGODB_DISABLE_JAVASCRIPT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886735" type="string">
+      <name>MONGODB_ENABLE_JOURNAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886736" type="string">
+      <name>MONGODB_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886737" type="string">
+      <name>MONGODB_ENABLE_IPV6</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886738" type="string">
+      <name>MONGODB_ENABLE_DIRECTORY_PER_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886739" type="number">
+      <name>containerPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886740" type="string">
+      <name>exposedPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886741" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886742" type="string">
+      <name>POSTGRES_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886743" type="string">
+      <name>POSTGRES_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886744" type="string">
+      <name>POSTGRES_USER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886745" type="string">
+      <name>USE_DB_ID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886746" type="number">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886747" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886748" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886749" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886750" type="string">
+      <name>KAFKA_CFG_ZOOKEEPER_CONNECT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886751" type="string">
+      <name>KAFKA_INTER_BROKER_LISTENER_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886752" type="string">
+      <name>KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886753" type="string">
+      <name>KAFKA_CFG_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886754" type="string">
+      <name>KAFKA_CFG_ADVERTISED_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886755" type="string">
+      <name>ALLOW_PLAINTEXT_LISTENER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886756" type="string">
+      <name>KAFKA_ZOOKEEPER_PROTOCOL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886757" type="string">
+      <name>KAFKA_VOLUME_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886758" type="string">
+      <name>KAFKA_LOG_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886759" type="string">
+      <name>KAFKA_CFG_DELETE_TOPIC_ENABLE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886760" type="string">
+      <name>KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886761" type="string">
+      <name>KAFKA_HEAP_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886762" type="string">
+      <name>KAFKA_CFG_LOG_FLUSH_INTERVAL_MESSAGES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886763" type="string">
+      <name>KAFKA_CFG_LOG_FLUSH_INTERVAL_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886764" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886765" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_CHECK_INTERVAL_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886766" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_HOURS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886767" type="string">
+      <name>KAFKA_CFG_MESSAGE_MAX_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886768" type="string">
+      <name>KAFKA_CFG_LOG_SEGMENT_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886769" type="string">
+      <name>KAFKA_CFG_LOG_DIRS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886770" type="string">
+      <name>KAFKA_CFG_DEFAULT_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886771" type="string">
+      <name>KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886772" type="string">
+      <name>KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886773" type="string">
+      <name>KAFKA_CFG_TRANSACTION_STATE_LOG_MIN_ISR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886774" type="string">
+      <name>KAFKA_CFG_NUM_IO_THREADS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886775" type="string">
+      <name>KAFKA_CFG_NUM_NETWORK_THREADS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886776" type="string">
+      <name>KAFKA_CFG_NUM_PARTITIONS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886777" type="string">
+      <name>KAFKA_CFG_NUM_RECOVERY_THREADS_PER_DATA_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886778" type="string">
+      <name>KAFKA_CFG_SOCKET_RECEIVE_BUFFER_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886779" type="string">
+      <name>KAFKA_CFG_SOCKET_REQUEST_MAX_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886780" type="string">
+      <name>KAFKA_CFG_SOCKET_SEND_BUFFER_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886781" type="string">
+      <name>KAFKA_CFG_ZOOKEEPER_CONNECTION_TIMEOUT_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886782" type="string">
+      <name>KAFKA_CFG_AUTHORIZER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886783" type="string">
+      <name>KAFKA_CFG_ALLOW_EVERYONE_IF_NO_ACL_FOUND</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886784" type="string">
+      <name>KAFKA_CFG_SUPER_USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886785" type="number">
+      <name>containerPort_kafka-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886786" type="number">
+      <name>containerPort_kafka-internal</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886787" type="string">
+      <name>exposedPort_tcp-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886788" type="string">
+      <name>exposedPort_tcp-internal</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886789" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886790" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886791" type="string">
+      <name>ZOO_DATA_LOG_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886792" type="string">
+      <name>ZOO_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886793" type="string">
+      <name>ZOO_TICK_TIME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886794" type="string">
+      <name>ZOO_INIT_LIMIT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886795" type="string">
+      <name>ZOO_SYNC_LIMIT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886796" type="string">
+      <name>ZOO_PRE_ALLOC_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886797" type="string">
+      <name>ZOO_SNAPCOUNT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886798" type="string">
+      <name>ZOO_MAX_CLIENT_CNXNS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886799" type="string">
+      <name>ZOO_4LW_COMMANDS_WHITELIST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886800" type="string">
+      <name>ZOO_LISTEN_ALLIPS_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886801" type="string">
+      <name>ZOO_AUTOPURGE_INTERVAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886802" type="string">
+      <name>ZOO_AUTOPURGE_RETAIN_COUNT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886803" type="string">
+      <name>ZOO_MAX_SESSION_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886804" type="string">
+      <name>ZOO_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886805" type="string">
+      <name>ZOO_ENABLE_AUTH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886806" type="string">
+      <name>ZOO_ENABLE_QUORUM_AUTH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886807" type="string">
+      <name>ZOO_HEAP_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886808" type="string">
+      <name>ZOO_LOG_LEVEL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886809" type="string">
+      <name>ALLOW_ANONYMOUS_LOGIN</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886810" type="number">
+      <name>containerPort_client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886811" type="number">
+      <name>containerPort_follower</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886812" type="number">
+      <name>containerPort_election</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886813" type="string">
+      <name>exposedPort_tcp-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886814" type="string">
+      <name>exposedPort_tcp-follower</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886815" type="string">
+      <name>exposedPort_tcp-election</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886816" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886817" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886818" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886819" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886820" type="string">
+      <name>resource_group_name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886821" type="string">
+      <name>dns_prefix</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886822" type="string">
+      <name>default_node_pool.name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886823" type="string">
+      <name>default_node_pool.node_count</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886824" type="string">
+      <name>default_node_pool.vm_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886825" type="string">
+      <name>identity.type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886826" type="string">
+      <name>tags</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886827" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886828" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886829" type="string">
+      <name>ALLOW_EMPTY_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886830" type="string">
+      <name>MONGODB_SYSTEM_LOG_VERBOSITY</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886831" type="string">
+      <name>MONGODB_DISABLE_SYSTEM_LOG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886832" type="string">
+      <name>MONGODB_DISABLE_JAVASCRIPT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886833" type="string">
+      <name>MONGODB_ENABLE_JOURNAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886834" type="string">
+      <name>MONGODB_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886835" type="string">
+      <name>MONGODB_ENABLE_IPV6</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886836" type="string">
+      <name>MONGODB_ENABLE_DIRECTORY_PER_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886837" type="string">
+      <name>containerPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886838" type="string">
+      <name>exposedPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886839" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886840" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886841" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886842" type="string">
+      <name>ALLOW_EMPTY_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886843" type="string">
+      <name>MONGODB_SYSTEM_LOG_VERBOSITY</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886844" type="string">
+      <name>MONGODB_DISABLE_SYSTEM_LOG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886845" type="string">
+      <name>MONGODB_DISABLE_JAVASCRIPT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886846" type="string">
+      <name>MONGODB_ENABLE_JOURNAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886847" type="string">
+      <name>MONGODB_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886848" type="string">
+      <name>MONGODB_ENABLE_IPV6</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886849" type="string">
+      <name>MONGODB_ENABLE_DIRECTORY_PER_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886850" type="string">
+      <name>containerPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886851" type="string">
+      <name>exposedPort_mongodb</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886852" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886853" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886854" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886855" type="string">
+      <name>KAFKA_CFG_ZOOKEEPER_CONNECT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886856" type="string">
+      <name>KAFKA_INTER_BROKER_LISTENER_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886857" type="string">
+      <name>KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886858" type="string">
+      <name>KAFKA_CFG_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886859" type="string">
+      <name>KAFKA_CFG_ADVERTISED_LISTENERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886860" type="string">
+      <name>ALLOW_PLAINTEXT_LISTENER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886861" type="string">
+      <name>KAFKA_ZOOKEEPER_PROTOCOL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886862" type="string">
+      <name>KAFKA_VOLUME_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886863" type="string">
+      <name>KAFKA_LOG_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886864" type="string">
+      <name>KAFKA_CFG_DELETE_TOPIC_ENABLE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886865" type="string">
+      <name>KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886866" type="string">
+      <name>KAFKA_HEAP_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886867" type="string">
+      <name>KAFKA_CFG_LOG_FLUSH_INTERVAL_MESSAGES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886868" type="string">
+      <name>KAFKA_CFG_LOG_FLUSH_INTERVAL_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886869" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886870" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_CHECK_INTERVAL_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886871" type="string">
+      <name>KAFKA_CFG_LOG_RETENTION_HOURS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886872" type="string">
+      <name>KAFKA_CFG_MESSAGE_MAX_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886873" type="string">
+      <name>KAFKA_CFG_LOG_SEGMENT_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886874" type="string">
+      <name>KAFKA_CFG_LOG_DIRS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886875" type="string">
+      <name>KAFKA_CFG_DEFAULT_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886876" type="string">
+      <name>KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886877" type="string">
+      <name>KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886878" type="string">
+      <name>KAFKA_CFG_TRANSACTION_STATE_LOG_MIN_ISR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886879" type="string">
+      <name>KAFKA_CFG_NUM_IO_THREADS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886880" type="string">
+      <name>KAFKA_CFG_NUM_NETWORK_THREADS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886881" type="string">
+      <name>KAFKA_CFG_NUM_PARTITIONS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886882" type="string">
+      <name>KAFKA_CFG_NUM_RECOVERY_THREADS_PER_DATA_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886883" type="string">
+      <name>KAFKA_CFG_SOCKET_RECEIVE_BUFFER_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886884" type="string">
+      <name>KAFKA_CFG_SOCKET_REQUEST_MAX_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886885" type="string">
+      <name>KAFKA_CFG_SOCKET_SEND_BUFFER_BYTES</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886886" type="string">
+      <name>KAFKA_CFG_ZOOKEEPER_CONNECTION_TIMEOUT_MS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886887" type="string">
+      <name>KAFKA_CFG_AUTHORIZER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886888" type="string">
+      <name>KAFKA_CFG_ALLOW_EVERYONE_IF_NO_ACL_FOUND</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886889" type="string">
+      <name>KAFKA_CFG_SUPER_USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886890" type="string">
+      <name>containerPort_kafka-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886891" type="string">
+      <name>containerPort_kafka-internal</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886892" type="string">
+      <name>exposedPort_tcp-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886893" type="string">
+      <name>exposedPort_tcp-internal</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886894" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886895" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886896" type="string">
+      <name>BITNAMI_DEBUG</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886897" type="string">
+      <name>ZOO_DATA_LOG_DIR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886898" type="string">
+      <name>ZOO_PORT_NUMBER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886899" type="string">
+      <name>ZOO_TICK_TIME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886900" type="string">
+      <name>ZOO_INIT_LIMIT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886901" type="string">
+      <name>ZOO_SYNC_LIMIT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886902" type="string">
+      <name>ZOO_PRE_ALLOC_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886903" type="string">
+      <name>ZOO_SNAPCOUNT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886904" type="string">
+      <name>ZOO_MAX_CLIENT_CNXNS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886905" type="string">
+      <name>ZOO_4LW_COMMANDS_WHITELIST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886906" type="string">
+      <name>ZOO_LISTEN_ALLIPS_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886907" type="string">
+      <name>ZOO_AUTOPURGE_INTERVAL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886908" type="string">
+      <name>ZOO_AUTOPURGE_RETAIN_COUNT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886909" type="string">
+      <name>ZOO_MAX_SESSION_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886910" type="string">
+      <name>ZOO_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886911" type="string">
+      <name>ZOO_ENABLE_AUTH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886912" type="string">
+      <name>ZOO_ENABLE_QUORUM_AUTH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886913" type="string">
+      <name>ZOO_HEAP_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886914" type="string">
+      <name>ZOO_LOG_LEVEL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886915" type="string">
+      <name>ALLOW_ANONYMOUS_LOGIN</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886916" type="string">
+      <name>containerPort_client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886917" type="string">
+      <name>containerPort_follower</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886918" type="string">
+      <name>containerPort_election</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886919" type="string">
+      <name>exposedPort_tcp-client</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886920" type="string">
+      <name>exposedPort_tcp-follower</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886921" type="string">
+      <name>exposedPort_tcp-election</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886922" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886923" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886924" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886925" type="string">
+      <name>T2_CART_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886926" type="string">
+      <name>T2_CART_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886927" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886928" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886929" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886930" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886931" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886932" type="string">
+      <name>JAVA_OPTS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886933" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886934" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886935" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE1_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886936" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE1_READER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886937" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE2_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886938" type="string">
+      <name>EVENTUATE_CDC_PIPELINE_PIPELINE2_READER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886939" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886940" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEURL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886941" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEUSERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886942" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEPASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886943" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_DATASOURCEDRIVERCLASSNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886944" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_LEADERSHIPLOCKPATH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886945" type="string">
+      <name>EVENTUATE_CDC_READER_READER1_OUTBOXID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886946" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_TYPE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886947" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEURL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886948" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEUSERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886949" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEPASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886950" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_DATASOURCEDRIVERCLASSNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886951" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_LEADERSHIPLOCKPATH</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886952" type="string">
+      <name>EVENTUATE_CDC_READER_READER2_OUTBOXID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886953" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886954" type="string">
+      <name>exposedPort_8099</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886955" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886956" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886957" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886958" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886959" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886960" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886961" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886962" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886963" type="string">
+      <name>T2_INVENTORY_SIZE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886964" type="string">
+      <name>T2_INVENTORY_TASKRATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886965" type="string">
+      <name>T2_INVENTORY_TTL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886966" type="string">
+      <name>T2_INVENTORY_SET_UNITS_TO_MAX</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886967" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886968" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886969" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886970" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886971" type="string">
+      <name>SPRING_PROFILES_ACTIVE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886972" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886973" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886974" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886975" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886976" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886977" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886978" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886979" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886980" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886981" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886982" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886983" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886984" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886985" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886986" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886987" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886988" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886989" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886990" type="string">
+      <name>MONGO_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886991" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886992" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886993" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886994" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886995" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886996" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886997" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886998" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304886999" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887000" type="string">
+      <name>EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887001" type="string">
+      <name>EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887002" type="string">
+      <name>SPRING_DATASOURCE_DRIVER_CLASS_NAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887003" type="string">
+      <name>SPRING_DATASOURCE_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887004" type="string">
+      <name>SPRING_DATASOURCE_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887005" type="string">
+      <name>SPRING_DATASOURCE_USERNAME</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887006" type="string">
+      <name>T2_PAYMENT_PROVIDER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887007" type="string">
+      <name>T2_PAYMENT_PROVIDER_DUMMY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887008" type="string">
+      <name>T2_PAYMENT_PROVIDER_TIMEOUT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887009" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887010" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887011" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887012" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887013" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887014" type="string">
+      <name>POSTGRES_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887015" type="string">
+      <name>POSTGRES_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887016" type="string">
+      <name>POSTGRES_USER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887017" type="string">
+      <name>USE_DB_ID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887018" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887019" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887020" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887021" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887022" type="string">
+      <name>POSTGRES_DB</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887023" type="string">
+      <name>POSTGRES_PASSWORD</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887024" type="string">
+      <name>POSTGRES_USER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887025" type="string">
+      <name>USE_DB_ID</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887026" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887027" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887028" type="string">
+      <name>storage_size</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887029" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887030" type="string">
+      <name>T2_UIBACKEND_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887031" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887032" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887033" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887034" type="string">
+      <name>T2_ORCHESTRATOR_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887035" type="string">
+      <name>T2_CART_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887036" type="string">
+      <name>T2_INVENTORY_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887037" type="string">
+      <name>T2_RESERVATION_ENDPOINT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887038" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887039" type="string">
+      <name>T2_COMPUTATION_SIMULATOR_URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887040" type="string">
+      <name>T2_JAEGER_ENABLED</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887041" type="string">
+      <name>T2_JAEGER_HOST</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887042" type="string">
+      <name>containerPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887043" type="string">
+      <name>exposedPort</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887044" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887045" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887046" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887047" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887048" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887049" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887050" type="string">
+      <name>docker.io/bitnami/mongodb:8.0.11-debian-12-r0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887051" type="string">
+      <name>docker.io/bitnami/mongodb:8.0.11-debian-12-r0</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887052" type="string">
+      <name>docker.io/bitnami/kafka:3.2.3-debian-11-r1</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887053" type="string">
+      <name>docker.io/bitnami/zookeeper:3.8.0-debian-11-r36</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887054" type="string">
+      <name>t2project/cart:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887055" type="string">
+      <name>eventuateio/eventuate-cdc-service:0.16.0.RELEASE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887056" type="string">
+      <name>t2project/creditinstitute:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887057" type="string">
+      <name>t2project/inventory:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887058" type="string">
+      <name>t2project/orchestrator:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887059" type="string">
+      <name>t2project/order:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887060" type="string">
+      <name>t2project/payment:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887061" type="string">
+      <name>eventuateio/eventuate-tram-sagas-postgres:0.23.0.RELEASE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887062" type="string">
+      <name>eventuateio/eventuate-tram-sagas-postgres:0.23.0.RELEASE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887063" type="string">
+      <name>t2project/ui:main</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304887064" type="string">
+      <name>t2project/uibackend:main</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  
+  <views>    
+    <diagrams>
+      <view identifier="id-001" xsi:type="Diagram">
+        <name xml:lang="en">Default View</name>
+      </view>
+    </diagrams>
+  </views>
+  
+</model>

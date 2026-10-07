@@ -1,0 +1,1441 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd" identifier="model1-1" version="1.0">
+  <name xml:lang="en">ArchiMate Model based on boutiqueshop_expected.yaml</name>
+  
+  <elements>    
+    <element identifier="n-8106456566304889224" xsi:type="Node">      
+      <name xml:lang="en">GoogleCloud</name>
+    </element>
+    <element identifier="n-8106456566304889225" xsi:type="Node">      
+      <name xml:lang="en">my_cluster</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889140">
+          <value>var.name</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889141">
+          <value>var.region</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889142">
+          <value>true</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889229" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">adservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889143">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889144">
+          <value>9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889145">
+          <value>9555:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889146">
+          <value>9555</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889234" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">cartservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889147">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889148">
+          <value>7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889149">
+          <value>7070:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889150">
+          <value>redis-cart:6379</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="sysof-8106456566304889239" xsi:type="SystemSoftware">      
+      <name xml:lang="en">redis-cart</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889151">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889152">
+          <value>6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889153">
+          <value>6379:6379</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889243" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">checkoutservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889154">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889155">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889156">
+          <value>5050:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889157">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889158">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889159">
+          <value>shippingservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889160">
+          <value>paymentservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889161">
+          <value>emailservice:5000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889162">
+          <value>currencyservice:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889163">
+          <value>cartservice:7070</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889254" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">currencyservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889164">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889165">
+          <value>7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889166">
+          <value>7000:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889167">
+          <value>7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889168">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889260" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">emailservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889169">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889170">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889171">
+          <value>5000:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889172">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889173">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889266" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">frontend</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889174">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889175">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889176">
+          <value>80:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889177">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889178">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889179">
+          <value>currencyservice:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889180">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889181">
+          <value>recommendationservice:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889182">
+          <value>shippingservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889183">
+          <value>checkoutservice:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889184">
+          <value>adservice:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889185">
+          <value>shoppingassistantservice:80</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889186">
+          <value>0</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889280" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">loadgenerator</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889187">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889188">
+          <value>frontend:80</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889189">
+          <value>10</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889190">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889285" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">paymentservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889191">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889192">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889193">
+          <value>50051:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889194">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889195">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889291" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">productcatalogservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889196">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889197">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889198">
+          <value>3550:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889199">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889200">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889297" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">recommendationservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889201">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889202">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889203">
+          <value>8080:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889204">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889205">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889206">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appcomp-8106456566304889304" xsi:type="ApplicationComponent">      
+      <name xml:lang="en">shippingservice</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889207">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889208">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889209">
+          <value>50051:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889210">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889211">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889310" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">adservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889143">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889144">
+          <value>9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889145">
+          <value>9555:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889146">
+          <value>9555</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889315" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">cartservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889147">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889148">
+          <value>7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889149">
+          <value>7070:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889150">
+          <value>redis-cart:6379</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="tif-8106456566304889320" xsi:type="TechnologyInterface">      
+      <name xml:lang="en">redis-cart Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889151">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889152">
+          <value>6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889153">
+          <value>6379:6379</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889324" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">checkoutservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889154">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889155">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889156">
+          <value>5050:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889157">
+          <value>5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889158">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889159">
+          <value>shippingservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889160">
+          <value>paymentservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889161">
+          <value>emailservice:5000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889162">
+          <value>currencyservice:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889163">
+          <value>cartservice:7070</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889335" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">currencyservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889164">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889165">
+          <value>7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889166">
+          <value>7000:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889167">
+          <value>7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889168">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889341" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">emailservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889169">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889170">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889171">
+          <value>5000:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889172">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889173">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889347" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">frontend Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889174">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889175">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889176">
+          <value>80:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889177">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889178">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889179">
+          <value>currencyservice:7000</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889180">
+          <value>cartservice:7070</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889181">
+          <value>recommendationservice:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889182">
+          <value>shippingservice:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889183">
+          <value>checkoutservice:5050</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889184">
+          <value>adservice:9555</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889185">
+          <value>shoppingassistantservice:80</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889186">
+          <value>0</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889366" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">paymentservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889191">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889192">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889193">
+          <value>50051:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889194">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889195">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889372" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">productcatalogservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889196">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889197">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889198">
+          <value>3550:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889199">
+          <value>3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889200">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889378" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">recommendationservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889201">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889202">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889203">
+          <value>8080:8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889204">
+          <value>8080</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889205">
+          <value>productcatalogservice:3550</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889206">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="appinter-8106456566304889385" xsi:type="ApplicationInterface">      
+      <name xml:lang="en">shippingservice Interface</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889207">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889208">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889209">
+          <value>50051:50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889210">
+          <value>50051</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889211">
+          <value>1</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="dev-8106456566304889391" xsi:type="Device">      
+      <name xml:lang="en">my_cluster Device</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889140">
+          <value>var.name</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889141">
+          <value>var.region</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889142">
+          <value>true</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="ts-8106456566304889395" xsi:type="TechnologyService">      
+      <name xml:lang="en">redis-cart Service</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889151">
+          <value>IfNotPresent</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889152">
+          <value>6379</value>
+        </property>
+        <property propertyDefinitionRef="propdef-8106456566304889153">
+          <value>6379:6379</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889399" xsi:type="Artifact">      
+      <name xml:lang="en">adservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889212">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/adservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889401" xsi:type="Artifact">      
+      <name xml:lang="en">cartservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889213">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/cartservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889405" xsi:type="Artifact">      
+      <name xml:lang="en">checkoutservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889215">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/checkoutservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889407" xsi:type="Artifact">      
+      <name xml:lang="en">currencyservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889216">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/currencyservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889409" xsi:type="Artifact">      
+      <name xml:lang="en">emailservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889217">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/emailservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889411" xsi:type="Artifact">      
+      <name xml:lang="en">frontend docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889218">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/frontend</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889413" xsi:type="Artifact">      
+      <name xml:lang="en">loadgenerator docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889219">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/loadgenerator</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889415" xsi:type="Artifact">      
+      <name xml:lang="en">paymentservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889220">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/paymentservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889417" xsi:type="Artifact">      
+      <name xml:lang="en">productcatalogservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889221">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889419" xsi:type="Artifact">      
+      <name xml:lang="en">recommendationservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889222">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/recommendationservice</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="art-8106456566304889421" xsi:type="Artifact">      
+      <name xml:lang="en">shippingservice docker_image</name>
+      <properties>        
+        <property propertyDefinitionRef="propdef-8106456566304889223">
+          <value>https://us-docker.pkg.dev/google-samples/microservices-demo/shippingservice</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  
+  <relationships>    
+    
+    <relationship identifier="sv-8106456566304889011" source="dev-8106456566304889391" target="n-8106456566304889225" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889012" source="ts-8106456566304889395" target="appcomp-8106456566304889234" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889013" source="appinter-8106456566304889372" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889014" source="appinter-8106456566304889385" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889015" source="appinter-8106456566304889366" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889016" source="appinter-8106456566304889341" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889017" source="appinter-8106456566304889335" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889018" source="appinter-8106456566304889315" target="appcomp-8106456566304889243" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889019" source="appinter-8106456566304889372" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889020" source="appinter-8106456566304889335" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889021" source="appinter-8106456566304889315" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889022" source="appinter-8106456566304889378" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889023" source="appinter-8106456566304889385" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889024" source="appinter-8106456566304889324" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889025" source="appinter-8106456566304889310" target="appcomp-8106456566304889266" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889026" source="appinter-8106456566304889347" target="appcomp-8106456566304889280" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="sv-8106456566304889027" source="appinter-8106456566304889372" target="appcomp-8106456566304889297" xsi:type="Serving">      
+      <name xml:lang="en">Serving</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889028" source="n-8106456566304889225" target="art-8106456566304889399" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889029" source="n-8106456566304889225" target="art-8106456566304889401" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889030" source="tif-8106456566304889320" target="ts-8106456566304889395" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889031" source="n-8106456566304889225" target="art-8106456566304889405" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889032" source="n-8106456566304889225" target="art-8106456566304889407" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889033" source="n-8106456566304889225" target="art-8106456566304889409" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889034" source="n-8106456566304889225" target="art-8106456566304889411" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889035" source="n-8106456566304889225" target="art-8106456566304889413" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889036" source="n-8106456566304889225" target="art-8106456566304889415" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889037" source="n-8106456566304889225" target="art-8106456566304889417" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889038" source="n-8106456566304889225" target="art-8106456566304889419" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="ass-8106456566304889039" source="n-8106456566304889225" target="art-8106456566304889421" xsi:type="Assignment">      
+      <name xml:lang="en">Assignment</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889040" source="art-8106456566304889399" target="appcomp-8106456566304889229" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889041" source="art-8106456566304889401" target="appcomp-8106456566304889234" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889042" source="art-8106456566304889405" target="appcomp-8106456566304889243" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889043" source="art-8106456566304889407" target="appcomp-8106456566304889254" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889044" source="art-8106456566304889409" target="appcomp-8106456566304889260" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889045" source="art-8106456566304889411" target="appcomp-8106456566304889266" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889046" source="art-8106456566304889413" target="appcomp-8106456566304889280" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889047" source="art-8106456566304889415" target="appcomp-8106456566304889285" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889048" source="art-8106456566304889417" target="appcomp-8106456566304889291" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889049" source="art-8106456566304889419" target="appcomp-8106456566304889297" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="rl-8106456566304889050" source="art-8106456566304889421" target="appcomp-8106456566304889304" xsi:type="Realization">      
+      <name xml:lang="en">Realization</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889051" source="n-8106456566304889224" target="n-8106456566304889225" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889052" source="sysof-8106456566304889239" target="tif-8106456566304889320" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889053" source="n-8106456566304889225" target="sysof-8106456566304889239" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889054" source="appcomp-8106456566304889291" target="appinter-8106456566304889372" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889055" source="appcomp-8106456566304889304" target="appinter-8106456566304889385" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889056" source="appcomp-8106456566304889285" target="appinter-8106456566304889366" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889057" source="appcomp-8106456566304889260" target="appinter-8106456566304889341" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889058" source="appcomp-8106456566304889254" target="appinter-8106456566304889335" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889059" source="appcomp-8106456566304889234" target="appinter-8106456566304889315" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889063" source="appcomp-8106456566304889297" target="appinter-8106456566304889378" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889065" source="appcomp-8106456566304889243" target="appinter-8106456566304889324" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889066" source="appcomp-8106456566304889229" target="appinter-8106456566304889310" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889067" source="appcomp-8106456566304889266" target="appinter-8106456566304889347" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+    <relationship identifier="comp-8106456566304889069" source="n-8106456566304889224" target="dev-8106456566304889391" xsi:type="Composition">      
+      <name xml:lang="en">Composition</name>
+    </relationship>
+  </relationships>
+  
+  <organizations>    
+    <item>      
+      <label xml:lang="en">Application</label>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="appinter-8106456566304889310"></item>
+        <item identifierRef="appinter-8106456566304889315"></item>
+        <item identifierRef="appinter-8106456566304889324"></item>
+        <item identifierRef="appinter-8106456566304889335"></item>
+        <item identifierRef="appinter-8106456566304889341"></item>
+        <item identifierRef="appinter-8106456566304889347"></item>
+        <item identifierRef="appinter-8106456566304889366"></item>
+        <item identifierRef="appinter-8106456566304889372"></item>
+        <item identifierRef="appinter-8106456566304889378"></item>
+        <item identifierRef="appinter-8106456566304889385"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Components</label>
+        <item identifierRef="appcomp-8106456566304889229"></item>
+        <item identifierRef="appcomp-8106456566304889234"></item>
+        <item identifierRef="appcomp-8106456566304889243"></item>
+        <item identifierRef="appcomp-8106456566304889254"></item>
+        <item identifierRef="appcomp-8106456566304889260"></item>
+        <item identifierRef="appcomp-8106456566304889266"></item>
+        <item identifierRef="appcomp-8106456566304889280"></item>
+        <item identifierRef="appcomp-8106456566304889285"></item>
+        <item identifierRef="appcomp-8106456566304889291"></item>
+        <item identifierRef="appcomp-8106456566304889297"></item>
+        <item identifierRef="appcomp-8106456566304889304"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item>        
+        <label xml:lang="en">Artifacts</label>
+        <item identifierRef="art-8106456566304889399"></item>
+        <item identifierRef="art-8106456566304889401"></item>
+        <item identifierRef="art-8106456566304889405"></item>
+        <item identifierRef="art-8106456566304889407"></item>
+        <item identifierRef="art-8106456566304889409"></item>
+        <item identifierRef="art-8106456566304889411"></item>
+        <item identifierRef="art-8106456566304889413"></item>
+        <item identifierRef="art-8106456566304889415"></item>
+        <item identifierRef="art-8106456566304889417"></item>
+        <item identifierRef="art-8106456566304889419"></item>
+        <item identifierRef="art-8106456566304889421"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Services</label>
+        <item identifierRef="ts-8106456566304889395"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Interfaces</label>
+        <item identifierRef="tif-8106456566304889320"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">Node</label>
+        <item identifierRef="n-8106456566304889224"></item>
+        <item identifierRef="n-8106456566304889225"></item>
+      </item>
+      <item>        
+        <label xml:lang="en">System Software</label>
+        <item identifierRef="sysof-8106456566304889239"></item>
+      </item>
+    </item>
+    
+    <item>      
+      <label xml:lang="en">Relations</label>
+      <item>
+        <label xml:lang="en">Structural</label>
+        <item>
+          <label xml:lang="en">Assignment</label>
+          <item identifierRef="ass-8106456566304889028"></item>
+          <item identifierRef="ass-8106456566304889029"></item>
+          <item identifierRef="ass-8106456566304889030"></item>
+          <item identifierRef="ass-8106456566304889031"></item>
+          <item identifierRef="ass-8106456566304889032"></item>
+          <item identifierRef="ass-8106456566304889033"></item>
+          <item identifierRef="ass-8106456566304889034"></item>
+          <item identifierRef="ass-8106456566304889035"></item>
+          <item identifierRef="ass-8106456566304889036"></item>
+          <item identifierRef="ass-8106456566304889037"></item>
+          <item identifierRef="ass-8106456566304889038"></item>
+          <item identifierRef="ass-8106456566304889039"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Composition</label>
+          <item identifierRef="comp-8106456566304889051"></item>
+          <item identifierRef="comp-8106456566304889052"></item>
+          <item identifierRef="comp-8106456566304889053"></item>
+          <item identifierRef="comp-8106456566304889054"></item>
+          <item identifierRef="comp-8106456566304889055"></item>
+          <item identifierRef="comp-8106456566304889056"></item>
+          <item identifierRef="comp-8106456566304889057"></item>
+          <item identifierRef="comp-8106456566304889058"></item>
+          <item identifierRef="comp-8106456566304889059"></item>
+          <item identifierRef="comp-8106456566304889063"></item>
+          <item identifierRef="comp-8106456566304889065"></item>
+          <item identifierRef="comp-8106456566304889066"></item>
+          <item identifierRef="comp-8106456566304889067"></item>
+          <item identifierRef="comp-8106456566304889069"></item>
+        </item>
+        <item>
+          <label xml:lang="en">Realization</label>
+          <item identifierRef="rl-8106456566304889040"></item>
+          <item identifierRef="rl-8106456566304889041"></item>
+          <item identifierRef="rl-8106456566304889042"></item>
+          <item identifierRef="rl-8106456566304889043"></item>
+          <item identifierRef="rl-8106456566304889044"></item>
+          <item identifierRef="rl-8106456566304889045"></item>
+          <item identifierRef="rl-8106456566304889046"></item>
+          <item identifierRef="rl-8106456566304889047"></item>
+          <item identifierRef="rl-8106456566304889048"></item>
+          <item identifierRef="rl-8106456566304889049"></item>
+          <item identifierRef="rl-8106456566304889050"></item>
+        </item>
+      </item>
+      <item>
+        <label xml:lang="en">Dependency</label>
+        <item>
+          <label xml:lang="en">Serving</label>
+          <item identifierRef="sv-8106456566304889011"></item>
+          <item identifierRef="sv-8106456566304889012"></item>
+          <item identifierRef="sv-8106456566304889013"></item>
+          <item identifierRef="sv-8106456566304889014"></item>
+          <item identifierRef="sv-8106456566304889015"></item>
+          <item identifierRef="sv-8106456566304889016"></item>
+          <item identifierRef="sv-8106456566304889017"></item>
+          <item identifierRef="sv-8106456566304889018"></item>
+          <item identifierRef="sv-8106456566304889019"></item>
+          <item identifierRef="sv-8106456566304889020"></item>
+          <item identifierRef="sv-8106456566304889021"></item>
+          <item identifierRef="sv-8106456566304889022"></item>
+          <item identifierRef="sv-8106456566304889023"></item>
+          <item identifierRef="sv-8106456566304889024"></item>
+          <item identifierRef="sv-8106456566304889025"></item>
+          <item identifierRef="sv-8106456566304889026"></item>
+          <item identifierRef="sv-8106456566304889027"></item>
+        </item>
+      </item>
+    </item>
+  </organizations>
+  
+  <propertyDefinitions>
+    <propertyDefinition identifier="propdef-8106456566304889070" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889071" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889072" type="string">
+      <name>enable_autopilot</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889073" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889074" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889075" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889076" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889077" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889078" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889079" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889080" type="string">
+      <name>REDIS_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889081" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889082" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889083" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889084" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889085" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889086" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889087" type="string">
+      <name>PAYMENT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889088" type="string">
+      <name>EMAIL_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889089" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889090" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889091" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889092" type="number">
+      <name>containerPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889093" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889094" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889095" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889096" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889097" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889098" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889099" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889100" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889101" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889102" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889103" type="string">
+      <name>exposedPort_http</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889104" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889105" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889106" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889107" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889108" type="string">
+      <name>RECOMMENDATION_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889109" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889110" type="string">
+      <name>CHECKOUT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889111" type="string">
+      <name>AD_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889112" type="string">
+      <name>SHOPPING_ASSISTANT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889113" type="string">
+      <name>ENABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889114" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889115" type="string">
+      <name>FRONTEND_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889116" type="string">
+      <name>USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889117" type="string">
+      <name>RATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889118" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889119" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889120" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889121" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889122" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889123" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889124" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889125" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889126" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889127" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889128" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889129" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889130" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889131" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889132" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889133" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889134" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889135" type="number">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889136" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889137" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889138" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889139" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889140" type="string">
+      <name>name</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889141" type="string">
+      <name>location</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889142" type="string">
+      <name>enable_autopilot</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889143" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889144" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889145" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889146" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889147" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889148" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889149" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889150" type="string">
+      <name>REDIS_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889151" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889152" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889153" type="string">
+      <name>exposedPort_tcp-redis</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889154" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889155" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889156" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889157" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889158" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889159" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889160" type="string">
+      <name>PAYMENT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889161" type="string">
+      <name>EMAIL_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889162" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889163" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889164" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889165" type="string">
+      <name>containerPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889166" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889167" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889168" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889169" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889170" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889171" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889172" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889173" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889174" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889175" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889176" type="string">
+      <name>exposedPort_http</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889177" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889178" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889179" type="string">
+      <name>CURRENCY_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889180" type="string">
+      <name>CART_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889181" type="string">
+      <name>RECOMMENDATION_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889182" type="string">
+      <name>SHIPPING_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889183" type="string">
+      <name>CHECKOUT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889184" type="string">
+      <name>AD_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889185" type="string">
+      <name>SHOPPING_ASSISTANT_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889186" type="string">
+      <name>ENABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889187" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889188" type="string">
+      <name>FRONTEND_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889189" type="string">
+      <name>USERS</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889190" type="string">
+      <name>RATE</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889191" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889192" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889193" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889194" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889195" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889196" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889197" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889198" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889199" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889200" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889201" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889202" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889203" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889204" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889205" type="string">
+      <name>PRODUCT_CATALOG_SERVICE_ADDR</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889206" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889207" type="string">
+      <name>imagePullPolicy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889208" type="string">
+      <name>containerPort_port</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889209" type="string">
+      <name>exposedPort_grpc</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889210" type="string">
+      <name>PORT</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889211" type="string">
+      <name>DISABLE_PROFILER</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889212" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/adservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889213" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/cartservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889214" type="string">
+      <name>redis:alpine</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889215" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/checkoutservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889216" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/currencyservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889217" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/emailservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889218" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/frontend</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889219" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/loadgenerator</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889220" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/paymentservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889221" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889222" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/recommendationservice</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propdef-8106456566304889223" type="string">
+      <name>us-docker.pkg.dev/google-samples/microservices-demo/shippingservice</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  
+  <views>    
+    <diagrams>
+      <view identifier="id-001" xsi:type="Diagram">
+        <name xml:lang="en">Default View</name>
+      </view>
+    </diagrams>
+  </views>
+  
+</model>

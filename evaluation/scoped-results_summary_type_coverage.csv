@@ -1,0 +1,15 @@
+source,kind,group,used_count,total,pct,used,missing
+actual,element,Business,0,13,0.0,,BusinessActor;BusinessCollaboration;BusinessEvent;BusinessFunction;BusinessInteraction;BusinessInterface;BusinessObject;BusinessProcess;BusinessRole;BusinessService;Contract;Product;Representation
+actual,element,Application,2,9,22.2,ApplicationComponent;ApplicationInterface,ApplicationCollaboration;ApplicationEvent;ApplicationFunction;ApplicationInteraction;ApplicationProcess;ApplicationService;DataObject
+actual,element,Technology,6,17,35.3,Artifact;Device;Node;SystemSoftware;TechnologyInterface;TechnologyService,CommunicationNetwork;DistributionNetwork;Equipment;Facility;Material;Path;TechnologyCollaboration;TechnologyEvent;TechnologyFunction;TechnologyInteraction;TechnologyProcess
+expected,element,Business,0,13,0.0,,BusinessActor;BusinessCollaboration;BusinessEvent;BusinessFunction;BusinessInteraction;BusinessInterface;BusinessObject;BusinessProcess;BusinessRole;BusinessService;Contract;Product;Representation
+expected,element,Application,2,9,22.2,ApplicationComponent;ApplicationInterface,ApplicationCollaboration;ApplicationEvent;ApplicationFunction;ApplicationInteraction;ApplicationProcess;ApplicationService;DataObject
+expected,element,Technology,6,17,35.3,Artifact;Device;Node;SystemSoftware;TechnologyInterface;TechnologyService,CommunicationNetwork;DistributionNetwork;Equipment;Facility;Material;Path;TechnologyCollaboration;TechnologyEvent;TechnologyFunction;TechnologyInteraction;TechnologyProcess
+actual,relation,Structural,3,4,75.0,Assignment;Composition;Realization,Aggregation
+actual,relation,Dependency,1,4,25.0,Serving,Access;Association;Influence
+actual,relation,Dynamic,0,2,0.0,,Flow;Triggering
+actual,relation,Other,0,1,0.0,,Specialization
+expected,relation,Structural,3,4,75.0,Assignment;Composition;Realization,Aggregation
+expected,relation,Dependency,1,4,25.0,Serving,Access;Association;Influence
+expected,relation,Dynamic,0,2,0.0,,Flow;Triggering
+expected,relation,Other,0,1,0.0,,Specialization
