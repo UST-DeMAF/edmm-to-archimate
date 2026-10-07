@@ -3,7 +3,7 @@
 This directory contains the deployment artifacts of the Meitrex platform used for evaluation.
 
 ## Source Application
-Google Cloud Online Boutique
+MEITREX
 
 Repository:
 https://github.com/MEITREX/infrastructure/tree/6fd6023e78e2f031241c2fdd21a2f87e0d5d85e9
